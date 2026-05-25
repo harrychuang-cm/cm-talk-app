@@ -1,0 +1,91 @@
+{
+  "appName": "design-spec",
+  "platform": "mobile",
+  "sourcePlatformHint": "unknown",
+  "colorScheme": "unknown",
+  "designSystem": "extracted design system",
+  "references": [
+    "design-reference/source-folder/SOURCE_FOLDER_MANIFEST.json",
+    "design-reference/source-folder/files/"
+  ],
+  "sourceFolder": {
+    "manifest": "design-reference/source-folder/SOURCE_FOLDER_MANIFEST.json",
+    "filesRoot": "design-reference/source-folder/files/",
+    "referenceOnly": true,
+    "packagedFileCount": 34,
+    "componentCandidates": [],
+    "tokenCandidates": [
+      "testing-demo-v2/tokens/design-tokens.css",
+      "testing-demo-v2/tokens/design-tokens.json"
+    ],
+    "entryCandidates": [
+      "testing-demo-v2/talk-ui/index.html"
+    ]
+  },
+  "screens": [
+    {
+      "id": "prototype-screen-1",
+      "reference": "design-reference/source-folder/files/testing-demo-v2/talk-ui/index.html",
+      "suggestedRoute": "/",
+      "suggestedComponent": "DesignSpecHomeScreen",
+      "purpose": "Primary product screen inferred from the prototype folder. Confirm route and responsibility during Stage 1.",
+      "requiredBlocks": [],
+      "acceptanceCriteria": [
+        "Preserves the prototype folder visual intent, product behavior, density, and component anatomy.",
+        "Uses production Storybook-documented components; no direct copy of page-level prototype HTML/CSS.",
+        "Maps tokens through ref → sys → comp layers before implementation.",
+        "Uses realistic mock data that matches the prototype density and product function."
+      ]
+    }
+  ],
+  "globalRequirements": {
+    "tokenFiles": [
+      "src/styles/tokens-ref.css",
+      "src/styles/tokens-sys.css",
+      "src/styles/tokens-comp.css",
+      "src/styles/tokens.css"
+    ],
+    "foundationStories": [
+      "Foundations/Color",
+      "Foundations/Typography",
+      "Foundations/Spacing",
+      "Foundations/Shape",
+      "Foundations/Elevation",
+      "Foundations/Iconography"
+    ],
+    "baselineComponents": [
+      "Button",
+      "Input",
+      "Card",
+      "Modal/Dialog",
+      "Label",
+      "Alert",
+      "Badge/Chip",
+      "Avatar",
+      "BottomNav",
+      "Icon",
+      "Tab",
+      "Dropdown"
+    ],
+    "navigationPattern": "Primary navigation surface: **BottomNav** (fixed to viewport bottom, safe-area aware).",
+    "appComponents": [],
+    "mobileWorkspace": {
+      "phase1WebViewApp": "mobile/apps/mobile-webview",
+      "phase2ReactNativeScaffold": "mobile/apps/mobile-react-native",
+      "phase3SharedPackage": "mobile/packages/shared",
+      "futureTargets": [
+        "Flutter",
+        "SwiftUI",
+        "Jetpack Compose"
+      ]
+    },
+    "productRequirements": {
+      "sourcePrd": "product/PRD.md",
+      "productSpec": "product/PRODUCT_SPEC.json",
+      "featureManifest": "product/FEATURE_MANIFEST.json",
+      "featureSpecs": "product/features/",
+      "flowSpecs": "product/flows/",
+      "changeRequests": "product/changes/"
+    }
+  }
+}

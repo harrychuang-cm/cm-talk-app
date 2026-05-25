@@ -1,0 +1,37 @@
+---
+description: Design system governance — token-first, composition-first rules for every code change in this project
+alwaysApply: true
+---
+
+# Design System Governance (always-on)
+
+This project uses **token-first, composition-first** governance. The full framework lives in `skills/design-system-governance/SKILL.md` — this file is the always-on enforcement layer for Cursor.
+
+## Three blocking gates
+
+1. **Token Gate** — never use a hardcoded color, spacing, radius, or duration. Every value must come from a CSS custom property defined from the spec. If a token is missing, **add it first** at the correct layer (`ref → sys → comp`); do not inline a hex/rgb/px workaround in a component or screen.
+2. **Composition Gate** — before creating a new component, run the **Component Reuse Gate** (`skills/ui-screenshot-to-storybook-product/SKILL.md` Phase 2). Reuse or extend existing components; do not duplicate just because a clip uses a different name.
+3. **Storybook Gate** — every reusable UI block needs a co-located `.stories.tsx` (Default + Variants + States) reviewed in Storybook **before** it is imported into a product screen. Product screens **only compose** documented components.
+
+- **Token contract**: `--ref-*` (raw values, value-named) → `--sys-*` (semantic roles) → `--comp-*` (component slots). Components only read `--comp-*`. Never skip a layer; never invent ref names that describe roles (`--ref-palette-primary` ✗).
+
+## Reference fidelity
+
+Match the screenshots' density, restraint, surface model, and information hierarchy. **Do not** add hero sections, decorative gradients, glassmorphism, glow effects, oversized empty cards, or "AI demo" flourishes unless the reference clearly shows them.
+
+## Background images and photos
+
+When the reference shows a photo, hero banner, profile picture, or any raster artwork: **do NOT recreate it with CSS gradients, SVG, emoji, or hand-coded shapes.** Do NOT use third-party hotlinked placeholders (`lorem-picsum`, `placeholder.com`, etc.).
+
+- **Default**: replace with a token-driven `background-color` (closest `--color-surface-container` / `--color-placeholder` role — never a literal hex). Preserve dimensions, aspect-ratio, border-radius, and spacing. Mark with `data-placeholder="image"` + `role="img"` + meaningful `aria-label`.
+- **Auto-generate** only if the project declares image-gen tooling (npm script / MCP / API endpoint) and the API key exists in `.env`. Otherwise stop at the placeholder.
+
+See `skills/ui-visual-parity/SKILL.md` → **Background Images and Photos** for the full decision tree.
+
+## Semantic chart colors
+
+`--color-bullish` (price up) and `--color-bearish` (price down) are independent of `--color-primary` and `--color-error`. Never substitute.
+
+## When you hit a missing token
+
+Stop. Add the token at the correct layer, then continue. Do not bypass with a hardcoded fallback. Read `skills/design-system-governance/SKILL.md` for the full layer architecture.

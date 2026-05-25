@@ -1,0 +1,35 @@
+.ui-card {
+  display: grid;
+  gap: var(--comp-card-gap);
+  padding: var(--comp-card-padding);
+  border-radius: var(--comp-card-radius);
+  color: var(--comp-card-fg);
+  background: var(--comp-card-bg);
+  box-shadow: var(--comp-card-shadow);
+}
+
+.ui-card--muted {
+  color: var(--comp-card-fg);
+  background: var(--comp-card-muted-bg);
+  box-shadow: var(--comp-sys-elevation-flat);
+}
+
+.ui-card--elevated {
+  box-shadow: var(--comp-card-shadow-strong);
+}
+
+.ui-card--outlined {
+  border: var(--comp-card-border-width) solid var(--comp-card-border);
+  box-shadow: var(--comp-sys-elevation-flat);
+}
+
+.ui-card--interactive {
+  transition:
+    transform var(--comp-motion-standard) var(--comp-motion-ease),
+    box-shadow var(--comp-motion-standard) var(--comp-motion-ease);
+}
+
+.ui-card--interactive:hover {
+  transform: translateY(calc(var(--comp-state-hover-lift) * -1));
+  box-shadow: var(--comp-card-shadow-strong);
+}

@@ -1,0 +1,36 @@
+.story-surface {
+  min-height: var(--comp-ref-size-screen);
+  padding: var(--comp-app-padding-block) var(--comp-app-padding-inline);
+  color: var(--comp-app-fg);
+  background: var(--comp-app-bg);
+  font-family: var(--comp-sys-font-ui);
+}
+
+.story-stack {
+  display: grid;
+  gap: var(--comp-sys-space-lg);
+  align-items: start;
+}
+
+.story-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--comp-sys-space-md);
+  align-items: center;
+}
+
+.story-mobile-frame {
+  position: relative;
+  max-width: var(--comp-app-max-width);
+  min-height: var(--comp-ref-size-screen);
+  margin-inline: auto;
+  overflow: hidden;
+  border-radius: var(--comp-sys-radius-xl);
+  color: var(--comp-app-fg);
+  background: var(--comp-app-bg);
+  box-shadow: var(--comp-app-shadow);
+}
+
+.story-card-demo {
+  max-width: var(--comp-ref-size-320);
+}

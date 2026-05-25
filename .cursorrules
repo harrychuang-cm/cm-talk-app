@@ -1,0 +1,39 @@
+# design-spec — Cursor Rules
+
+## MANDATORY: Read before any implementation
+This project enforces design system governance. Read these files first:
+- `./skills/design-system-governance/SKILL.md` — token-first workflow and blocking gates
+- `./skills/design-system-governance/principles.md` — 10 design principles
+- `./skills/ui-screenshot-to-storybook-product/SKILL.md` — when implementing from a **UI screenshot or mockup**: parse UI → Storybook → product composition
+- `./skills/ui-visual-parity/SKILL.md` — when auditing built UI against reference screenshots: project-agnostic discovery + target resolution + precision comparison + component-first layered fix workflow
+- `./CLAUDE.md` — full design spec, tokens, component specs, screen requirements
+- `./start-here/BUILD_PLAN.md` — execution sequence, route/screen plan, stop conditions, and done criteria
+- `./start-here/TASKS.md` — implementation checklist; update it as each phase completes
+- `./start-here/KICKSTART.md` — first-message prompts for Claude Code / Cursor
+- `./product/SCREEN_MANIFEST.json` — reference screenshot → route/screen/component acceptance map
+- `./product/PRD.md` — product requirements source; replace placeholder when real PRD exists
+- `./product/PRODUCT_SPEC.json` — machine-readable product model extracted from PRD
+- `./product/FEATURE_MANIFEST.json` — feature priorities, acceptance criteria, affected screens, flows, and dependencies
+- `./product/docs/product-change-workflow.md` — incremental PRD/change request workflow
+- `./mobile/MOBILE_APP_ROADMAP.md` — mobile strategy for WebView, React Native, shared package, and future native targets
+- `./mobile/MOBILE_BUILD_MATRIX.json` — generated mobile target matrix and screen sync plan
+- `./design/reference-visual-analysis.md` — extracted design principles, layout model, and accessibility intent from the same screenshot run
+- `./design/extracted-design-tokens/design-tokens.json` — machine-readable token snapshot
+
+## Non-negotiable rules
+1. No hardcoded color, spacing, radius, or animation values — derive everything from your token CSS (`var(--…)`) aligned with the spec.
+2. Storybook is the component hub: co-located `.stories.tsx` for every reusable block; same tokens/theme as the app. Product screens only compose those components to match `./design-reference/` screenshots.
+3. Storybook MCP is mandatory: run `npx storybook add @storybook/addon-mcp`, start Storybook in one terminal, connect it from another with `npx mcp-add --type http --url "http://localhost:6006/mcp" --scope project` (adjust port), then use MCP documentation/story/test tools before choosing props or completing stories.
+4. Build shared UI in this repo; do not assume an external `cm-ui-library` clone unless the team adds that integration explicitly.
+5. Keep bullish/bearish chart semantics independent of primary/error colors.
+6. All 10 design principles from principles.md apply to every screen.
+7. Reference screenshots in `./design-reference/` to validate visual output.
+8. **Design System Architect:** research tokens in `CLAUDE.md`, then add Storybook **Foundations** (color, typography, spacing/layout, shape/radius, elevation/shadow, and iconography) as first-class pages next to component stories. Author every foundation guide as a full-screen `.tsx` documentation page plus a minimal CSF `.stories.tsx` route entry. Do not use `.jsx`, `.mdx`, or autodocs for foundations. Each guide must read like a design-system website page: explain design intent, token contract, role mapping, usage timing, accessibility expectations, implementation examples, and do/don't guidance. Use an editorial documentation layout, not a plain card grid: a full-width hero, sticky in-page section rail, dense token tables, visual specimens, implementation notes, and paired do/don't examples. Keep cards only for individual specimens or examples. Foundation `.stories.tsx` files are Storybook navigation shells only: import `Meta`/`StoryObj`, set `title: 'Foundations/<Name>'`, use `parameters: { layout: 'fullscreen' }`, render the guide page, and do not set `tags: ['autodocs']`. If a project enables autodocs globally, explicitly opt these stories out with `tags: ['!autodocs']`. Use these fixed documentation page templates:
+- **Color**: semantic color model, surface ladder, role swatches with resolved values, interaction/state colors, finance semantics, accessibility contrast notes, implementation snippets, do/don't.
+- **Typography**: type scale specimens, role-to-UI mapping, hierarchy rules for dense screens, truncation/overflow rules, implementation snippets, do/don't.
+- **Spacing**: spacing scale table, density modes, page/grid rhythm, component internal vs external spacing rules, composition specimens, do/don't.
+- **Shape**: radius ladder, control/card/container mapping, touch target geometry, nested-surface rules, component examples, do/don't.
+- **Elevation**: surface depth model, shadow/elevation scale, overlay/popover/dialog rules, stacking examples, motion/state notes, do/don't.
+- **Iconography**: icon source + shared wrapper contract, size/stroke matrix, semantic color mapping, decorative vs informative accessibility rules, examples, do/don't. Treat `Icon` as a baseline shared component with a reusable wrapper and document it in `Foundations/Iconography`. Keep them in sync when tokens change.
+9. Treat the zip as a from-zero product workspace: keep `mobile/packages/shared` synchronized, point `mobile/apps/mobile-webview` at the validated web app for Phase 1, and promote only selected screens into `mobile/apps/mobile-react-native` for Phase 2.
+10. Product changes are incremental: use `/prd` to ingest PRD updates and `/change` for feature additions/modifications. Update PRD/spec/manifests before patching UI code.

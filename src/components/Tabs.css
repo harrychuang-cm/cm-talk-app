@@ -1,0 +1,61 @@
+.ui-tabs {
+  display: inline-flex;
+  gap: var(--comp-sys-space-xs);
+  max-width: var(--comp-ref-size-full);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ui-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.ui-tabs--segmented {
+  padding: var(--comp-sys-space-xs);
+  border-radius: var(--comp-tab-radius);
+  background: var(--comp-tab-bg);
+}
+
+.ui-tabs__item {
+  position: relative;
+  min-height: var(--comp-tab-height);
+  padding-inline: var(--comp-tab-padding-inline);
+  border: none;
+  border-radius: var(--comp-tab-radius);
+  color: var(--comp-tab-fg);
+  background: transparent;
+  font-size: var(--comp-chip-font-size);
+  font-weight: var(--comp-chip-weight);
+  line-height: var(--comp-chip-line);
+  white-space: nowrap;
+}
+
+.ui-tabs__item--active {
+  color: var(--comp-tab-active-fg);
+  background: var(--comp-tab-active-bg);
+}
+
+.ui-tabs--underline .ui-tabs__item--active {
+  color: var(--comp-tab-active-fg);
+  background: transparent;
+}
+
+.ui-tabs--underline .ui-tabs__item--active::after {
+  position: absolute;
+  right: var(--comp-sys-space-lg);
+  bottom: var(--comp-sys-space-zero);
+  left: var(--comp-sys-space-lg);
+  height: var(--comp-sys-size-stroke);
+  content: "";
+  border-radius: var(--comp-chip-radius);
+  background: var(--comp-tab-indicator);
+}
+
+.ui-tabs__item:focus-visible {
+  outline: var(--comp-state-focus-width) solid var(--comp-button-focus-ring);
+  outline-offset: var(--comp-state-focus-offset);
+}
+
+.ui-tabs__item:disabled {
+  color: var(--comp-button-disabled-fg);
+}

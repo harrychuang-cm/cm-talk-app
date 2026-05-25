@@ -1,0 +1,36 @@
+.ui-dropdown-field {
+  display: grid;
+  gap: var(--comp-sys-space-sm);
+}
+
+.ui-dropdown {
+  width: var(--comp-ref-size-full);
+  min-height: var(--comp-dropdown-height);
+  padding-inline: var(--comp-dropdown-padding-inline);
+  border: var(--comp-card-border-width) solid var(--comp-dropdown-border);
+  border-radius: var(--comp-dropdown-radius);
+  color: var(--comp-dropdown-fg);
+  background: var(--comp-dropdown-bg);
+}
+
+.ui-dropdown:focus {
+  border-color: var(--comp-input-focus);
+  outline: none;
+}
+
+.ui-dropdown:disabled {
+  color: var(--comp-button-disabled-fg);
+  background: var(--comp-button-disabled-bg);
+}
+
+.ui-dropdown-field__helper {
+  color: var(--comp-label-muted-fg);
+  font-size: var(--comp-label-size);
+  line-height: var(--comp-label-line);
+}
+
+.ui-dropdown-field--error .ui-dropdown,
+.ui-dropdown-field--error .ui-dropdown-field__helper {
+  border-color: var(--comp-input-error);
+  color: var(--comp-input-error);
+}

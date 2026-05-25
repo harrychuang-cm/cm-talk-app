@@ -1,0 +1,90 @@
+.trade-rail {
+  display: grid;
+}
+
+.trade-rail__track {
+  display: grid;
+  grid-auto-columns: minmax(var(--comp-trade-card-width), 78%);
+  grid-auto-flow: column;
+  gap: var(--comp-sys-space-md);
+  overflow-x: auto;
+  margin-inline: calc(var(--comp-app-padding-inline) * -1);
+  margin-block-end: calc(var(--comp-sys-space-xl) * -1);
+  padding: var(--comp-sys-space-md) var(--comp-app-padding-inline) var(--comp-sys-space-3xl);
+  border-radius: var(--comp-trade-rail-radius);
+  background: var(--comp-rail-bg);
+  scroll-padding-inline: var(--comp-app-padding-inline);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.trade-rail__track::-webkit-scrollbar {
+  display: none;
+}
+
+.trade-card {
+  display: grid;
+  min-height: var(--comp-trade-card-height);
+  align-content: start;
+  gap: var(--comp-sys-space-md);
+  padding: var(--comp-card-padding);
+  border-radius: var(--comp-card-radius);
+  color: var(--comp-card-fg);
+  background: var(--comp-card-bg);
+  box-shadow: var(--comp-card-shadow);
+  scroll-snap-align: start;
+}
+
+.trade-card__topline,
+.trade-card__symbol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--comp-sys-space-sm);
+}
+
+.trade-card__badge,
+.trade-card__position {
+  justify-self: start;
+  padding: var(--comp-sys-space-xs) var(--comp-sys-space-md);
+  border-radius: var(--comp-chip-radius);
+  font-size: var(--comp-sys-type-label-sm-size);
+  font-weight: var(--comp-sys-weight-label);
+  line-height: var(--comp-sys-type-label-sm-line);
+}
+
+.trade-card__badge {
+  color: var(--comp-button-fg);
+  background: var(--comp-button-bg);
+}
+
+.trade-card--sell .trade-card__badge {
+  background: var(--comp-trade-sell-bg);
+}
+
+.trade-card__date,
+.trade-card__symbol span,
+.trade-card__position,
+.trade-card p {
+  color: var(--comp-card-muted-fg);
+}
+
+.trade-card__symbol strong {
+  font-size: var(--comp-sys-type-title-lg-size);
+  font-weight: var(--comp-sys-weight-display);
+  line-height: var(--comp-sys-type-title-lg-line);
+}
+
+.trade-card__position {
+  background: var(--comp-card-muted-bg);
+}
+
+.trade-card p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: var(--comp-sys-space-zero);
+  font-size: var(--comp-sys-type-body-sm-size);
+  line-height: var(--comp-sys-type-body-sm-line);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}

@@ -1,0 +1,52 @@
+@import './tokens.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: var(--ref-size-full);
+  background: var(--comp-app-bg);
+}
+
+body {
+  min-height: var(--ref-size-screen);
+  margin: var(--ref-space-0);
+  overflow: hidden;
+  color: var(--comp-app-fg);
+  background: var(--comp-app-bg);
+  font-family: var(--sys-font-ui);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled,
+select:disabled {
+  cursor: not-allowed;
+}
+
+#root {
+  min-height: var(--ref-size-screen);
+}
+
+@keyframes enter-up {
+  from {
+    opacity: 0;
+    transform: translateY(var(--ref-space-12));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(var(--ref-space-0));
+  }
+}

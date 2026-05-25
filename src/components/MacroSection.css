@@ -1,0 +1,92 @@
+.macro-section {
+  display: grid;
+  gap: var(--comp-section-gap);
+  padding: var(--comp-sys-space-xl) var(--comp-app-padding-inline);
+}
+
+.macro-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(var(--comp-sys-space-zero), 1fr));
+  gap: var(--comp-sys-space-md);
+}
+
+.macro-card {
+  display: grid;
+  min-height: var(--comp-macro-card-height);
+  align-content: space-between;
+  padding: var(--comp-sys-space-lg);
+  border-radius: var(--comp-card-radius);
+  color: var(--comp-card-fg);
+  background: var(--comp-macro-neutral-bg);
+  box-shadow: var(--comp-card-shadow);
+}
+
+.macro-card--brand {
+  color: var(--comp-macro-brand-fg);
+  background: var(--comp-macro-brand-bg);
+}
+
+.macro-card--warm {
+  color: var(--comp-macro-brand-fg);
+  background: var(--comp-macro-warm-bg);
+}
+
+.macro-card--cool {
+  background: var(--comp-macro-cool-bg);
+}
+
+.macro-card__label,
+.macro-card__meta {
+  font-size: var(--comp-sys-type-body-sm-size);
+  line-height: var(--comp-sys-type-body-sm-line);
+}
+
+.macro-card__value {
+  font-size: var(--comp-sys-type-title-xl-size);
+  font-weight: var(--comp-sys-weight-display);
+  line-height: var(--comp-sys-type-title-xl-line);
+}
+
+.insight-card {
+  grid-template-columns: auto minmax(var(--comp-sys-space-zero), 1fr) auto;
+  align-items: center;
+}
+
+.insight-card__icon {
+  width: var(--comp-insight-icon-size);
+  height: var(--comp-insight-icon-size);
+  object-fit: contain;
+}
+
+.insight-card__copy {
+  display: grid;
+  gap: var(--comp-sys-space-xs);
+}
+
+.insight-card__copy strong {
+  font-size: var(--comp-sys-type-body-lg-size);
+  line-height: var(--comp-sys-type-body-lg-line);
+}
+
+.insight-card__copy p {
+  margin: var(--comp-sys-space-zero);
+  white-space: pre-line;
+  color: var(--comp-card-muted-fg);
+  font-size: var(--comp-sys-type-body-sm-size);
+  line-height: var(--comp-sys-type-body-sm-line);
+}
+
+.insight-card__action {
+  display: grid;
+  width: var(--comp-icon-button-size);
+  height: var(--comp-icon-button-size);
+  place-items: center;
+  border: none;
+  border-radius: var(--comp-icon-button-radius);
+  color: var(--comp-button-secondary-fg);
+  background: var(--comp-button-secondary-bg);
+}
+
+.insight-card__action .ui-icon {
+  color: currentColor;
+}

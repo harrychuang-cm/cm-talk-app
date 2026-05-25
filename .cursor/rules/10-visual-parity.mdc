@@ -1,0 +1,33 @@
+---
+description: Use when comparing implemented UI against reference screenshots, fixing visual drift, or auditing layout/token parity. Triggers on phrases like "compare to reference", "matches the screenshot", "visual diff", "fix layout drift", or when the user attaches a reference image alongside an implementation file.
+---
+
+# UI Visual Parity (description-triggered)
+
+When the user asks to compare a UI implementation against a reference screenshot, follow `skills/ui-visual-parity/SKILL.md` end-to-end.
+
+## Mandatory order
+
+1. **Discovery** — find reference screenshots (`reference/`, `references/`, `screenshots/`, `design/`, `designs/`, `mockups/`, `spec/`, `specs/`, `public/`), entry points (src/pages, src/screens, src/app, app/, pages/, src/routes, src/components, Storybook stories), and the project's styling system.
+2. **Target Resolution** — apply priority: screenshot+URL > screenshot+file > screenshot+route > screenshot only > URL/route only > file only > empty. List candidates and ask before editing if multiple plausible matches exist.
+3. **Comparison Workflow** — output a discrepancy table:
+   `| Block | Expected (reference) | Actual (implementation) | Difference | Owner | Fix |`
+4. **Precision Workflow** — stabilize render conditions, inspect computed styles, map measurements to tokens, use screenshot diff after fixes, set explicit tolerance for anti-aliasing.
+5. **Evidence Requirements** — every fix must cite evidence (screenshot observation / computed style / token value / component source / story).
+6. **Component-First Fix Strategy** — layered fix order:
+   1. Token / theme layer
+   2. Primitive / shared component layer
+   3. Composition / layout layer
+   4. Page-only style layer (only when no shared owner exists)
+
+## Hard rules
+
+- **Never** apply a hardcoded hex/px/rgba in a screen file to make a visual match. If the value is missing, add the token first.
+- **Never** restyle a shared component's rendered markup from the page. Update the component, variant, props, or token that owns the visual behavior.
+- When changing shared defaults, inspect representative call sites or stories before/after — prefer variants/props/slots over breaking shared defaults.
+
+## Stop conditions
+
+Stop and ask before editing when the reference is ambiguous, the implementation target cannot be rendered, multiple matches are equally plausible, or a fix would change product behavior, copy, data flow, accessibility semantics, or shared component defaults with unclear blast radius.
+
+Read the full skill for the complete workflow, evidence-collection methods, and regression guardrails.

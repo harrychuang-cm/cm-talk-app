@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProductSpec",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "productName",
+    "source",
+    "status"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "number"
+    },
+    "productName": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "targetUsers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nonGoals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "coreJobs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "domainEntities": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "businessRules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nonFunctionalRequirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "successMetrics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "openQuestions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

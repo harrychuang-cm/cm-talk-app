@@ -1,0 +1,21 @@
+.top-app-bar {
+  display: flex;
+  min-height: var(--comp-sys-size-app-bar);
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--comp-sys-space-sm);
+  padding: var(--comp-sys-space-lg) var(--comp-app-padding-inline) var(--comp-sys-space-sm);
+}
+
+.top-app-bar__brand {
+  display: flex;
+  min-width: var(--comp-sys-space-zero);
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+.top-app-bar__actions {
+  display: flex;
+  flex: 0 0 auto;
+  gap: var(--comp-sys-space-xs);
+}

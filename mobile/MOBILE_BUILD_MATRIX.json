@@ -1,0 +1,49 @@
+{
+  "appName": "design-spec",
+  "slug": "design-spec",
+  "defaultStrategy": "Build web first, ship a WebView app immediately, then graduate selected screens to native React Native.",
+  "phases": [
+    {
+      "phase": 1,
+      "target": "WebView app",
+      "path": "mobile/apps/mobile-webview",
+      "status": "scaffolded",
+      "purpose": "Fast installable app shell that points at the generated web product."
+    },
+    {
+      "phase": 2,
+      "target": "React Native app",
+      "path": "mobile/apps/mobile-react-native",
+      "status": "scaffolded",
+      "purpose": "Native screen scaffold using the same screen manifest and shared product contract."
+    },
+    {
+      "phase": 3,
+      "target": "Shared package",
+      "path": "mobile/packages/shared",
+      "status": "scaffolded",
+      "purpose": "Shared app metadata, screen manifest, route constants, and token snapshot for web/mobile targets."
+    },
+    {
+      "phase": 4,
+      "target": "AI assisted screen conversion",
+      "path": "mobile/docs/mobile-screen-conversion.md",
+      "status": "documented",
+      "purpose": "Convert validated web screens into native screens one at a time."
+    },
+    {
+      "phase": 5,
+      "target": "Flutter / SwiftUI / Compose",
+      "path": "mobile/docs/future-native-targets.md",
+      "status": "documented",
+      "purpose": "Future generators consume product/SCREEN_MANIFEST.json plus mobile/packages/shared instead of re-reading raw screenshots."
+    }
+  ],
+  "screens": [
+    {
+      "id": "screen-1",
+      "route": "/",
+      "title": "Home"
+    }
+  ]
+}

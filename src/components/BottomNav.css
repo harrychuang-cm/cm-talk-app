@@ -1,0 +1,68 @@
+.ui-bottom-nav {
+  position: fixed;
+  right: auto;
+  bottom: max(var(--comp-bottom-nav-inset), env(safe-area-inset-bottom));
+  left: calc(var(--comp-ref-size-full) / 2);
+  z-index: var(--comp-ref-size-32);
+  display: grid;
+  width: calc(var(--comp-ref-size-full) - var(--comp-app-padding-inline) - var(--comp-app-padding-inline));
+  max-width: calc(var(--comp-app-max-width) - var(--comp-app-padding-inline) - var(--comp-app-padding-inline));
+  min-height: var(--comp-bottom-nav-height);
+  grid-template-columns: repeat(5, minmax(var(--comp-sys-space-zero), 1fr));
+  padding: var(--comp-bottom-nav-padding);
+  border-radius: var(--comp-bottom-nav-radius);
+  background: var(--comp-bottom-nav-bg);
+  -webkit-backdrop-filter: var(--comp-bottom-nav-backdrop-filter);
+  backdrop-filter: var(--comp-bottom-nav-backdrop-filter);
+  box-shadow: var(--comp-bottom-nav-shadow);
+  transform: translateX(calc(var(--comp-ref-size-full) * -0.5));
+}
+
+.ui-bottom-nav__item {
+  position: relative;
+  display: grid;
+  min-width: var(--comp-sys-space-zero);
+  min-height: calc(var(--comp-bottom-nav-height) - var(--comp-sys-space-lg));
+  place-items: center;
+  align-content: center;
+  gap: var(--comp-sys-space-xs);
+  border: none;
+  border-radius: var(--comp-bottom-nav-radius);
+  color: var(--comp-bottom-nav-fg);
+  background: transparent;
+  font-size: var(--comp-bottom-nav-label-size);
+  font-weight: var(--comp-bottom-nav-label-weight);
+  line-height: var(--comp-bottom-nav-label-line);
+}
+
+.ui-bottom-nav__item--active {
+  color: var(--comp-bottom-nav-active-fg);
+  background: var(--comp-bottom-nav-active-bg);
+}
+
+.ui-bottom-nav__item:focus-visible {
+  outline: var(--comp-state-focus-width) solid var(--comp-button-focus-ring);
+  outline-offset: var(--comp-state-focus-offset);
+}
+
+.ui-bottom-nav__item:disabled {
+  color: var(--comp-button-disabled-fg);
+}
+
+.ui-bottom-nav__icon {
+  position: relative;
+  display: grid;
+}
+
+.ui-bottom-nav__badge {
+  position: absolute;
+  inset-block-start: calc(var(--comp-sys-space-xs) * -1);
+  inset-inline-end: calc(var(--comp-sys-space-xs) * -1);
+  min-width: var(--comp-sys-space-lg);
+  min-height: var(--comp-sys-space-lg);
+  border-radius: var(--comp-chip-radius);
+  color: var(--comp-button-fg);
+  background: var(--comp-alert-error);
+  font-size: var(--comp-label-size);
+  line-height: var(--comp-label-line);
+}

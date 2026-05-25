@@ -1,0 +1,18 @@
+.app-shell {
+  position: relative;
+  isolation: isolate;
+  width: var(--comp-ref-size-full);
+  max-width: var(--comp-app-max-width);
+  height: var(--comp-ref-size-screen);
+  margin-inline: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: var(--comp-app-fg);
+  background: var(--comp-app-bg);
+  box-shadow: var(--comp-app-shadow);
+  overscroll-behavior-y: contain;
+}
+
+.app-shell__content {
+  padding-block-end: calc(var(--comp-bottom-nav-height) + var(--comp-sys-space-4xl));
+}

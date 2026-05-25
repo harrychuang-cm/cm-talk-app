@@ -1,0 +1,7 @@
+.home-section {
+  display: grid;
+}
+
+.home-section--sentiment {
+  padding-block: var(--comp-sys-space-sm) var(--comp-sys-space-md);
+}

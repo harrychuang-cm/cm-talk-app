@@ -1,0 +1,22 @@
+.ui-label {
+  display: grid;
+  gap: var(--comp-sys-space-xs);
+  color: var(--comp-label-fg);
+  font-size: var(--comp-label-size);
+  font-weight: var(--comp-label-weight);
+  line-height: var(--comp-label-line);
+}
+
+.ui-label__helper {
+  color: var(--comp-label-muted-fg);
+  font-weight: var(--comp-sys-weight-body);
+}
+
+.ui-label__required,
+.ui-label--error {
+  color: var(--comp-label-error-fg);
+}
+
+.ui-label--disabled {
+  color: var(--comp-label-muted-fg);
+}

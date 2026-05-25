@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "productName": "design-spec",
+  "slug": "design-spec",
+  "source": "product/PRD.md",
+  "status": "placeholder",
+  "targetUsers": [],
+  "goals": [],
+  "nonGoals": [],
+  "coreJobs": [],
+  "domainEntities": [],
+  "businessRules": [],
+  "nonFunctionalRequirements": [],
+  "successMetrics": [],
+  "openQuestions": [
+    "Replace product/PRD.md with the real product requirements, then run /prd to refresh this file."
+  ]
+}

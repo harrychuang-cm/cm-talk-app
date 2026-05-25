@@ -1,0 +1,44 @@
+.ui-input-field {
+  display: grid;
+  gap: var(--comp-sys-space-sm);
+}
+
+.ui-input {
+  width: var(--comp-ref-size-full);
+  min-height: var(--comp-input-height);
+  padding-inline: var(--comp-input-padding-inline);
+  border: var(--comp-card-border-width) solid transparent;
+  border-radius: var(--comp-input-radius);
+  color: var(--comp-input-fg);
+  background: var(--comp-input-bg);
+  font-size: var(--comp-input-font-size);
+  line-height: var(--comp-input-line-height);
+}
+
+.ui-input::placeholder {
+  color: var(--comp-input-placeholder);
+}
+
+.ui-input:focus {
+  border-color: var(--comp-input-focus);
+  outline: none;
+}
+
+.ui-input:disabled {
+  color: var(--comp-button-disabled-fg);
+  background: var(--comp-button-disabled-bg);
+}
+
+.ui-input-field--error .ui-input {
+  border-color: var(--comp-input-error);
+}
+
+.ui-input-field__helper {
+  color: var(--comp-input-placeholder);
+  font-size: var(--comp-label-size);
+  line-height: var(--comp-label-line);
+}
+
+.ui-input-field--error .ui-input-field__helper {
+  color: var(--comp-input-error);
+}

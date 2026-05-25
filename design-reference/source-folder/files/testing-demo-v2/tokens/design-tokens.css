@@ -1,0 +1,375 @@
+:root {
+  /* Reference layer: raw values only. */
+  --wise-ref-color-neutral-0: #ffffff;
+  --wise-ref-color-neutral-50: #fafafa;
+  --wise-ref-color-neutral-100: #f3f5f1;
+  --wise-ref-color-neutral-150: #eceee9;
+  --wise-ref-color-neutral-200: #e1e4de;
+  --wise-ref-color-neutral-300: #d1d5ce;
+  --wise-ref-color-neutral-500: #777a75;
+  --wise-ref-color-neutral-700: #4a4d48;
+  --wise-ref-color-neutral-900: #0a0b09;
+  --wise-ref-color-neutral-1000: #000000;
+
+  --wise-ref-color-green-50: #effbe7;
+  --wise-ref-color-green-100: #dcfac4;
+  --wise-ref-color-green-300: #a6ef75;
+  --wise-ref-color-green-400: #8fe15e;
+  --wise-ref-color-green-600: #163f09;
+  --wise-ref-color-green-700: #0b3000;
+  --wise-ref-color-green-900: #071f00;
+
+  --wise-ref-color-yellow-100: #fff7a8;
+  --wise-ref-color-yellow-300: #FFF70F;
+  --wise-ref-color-yellow-500: #f2df4f;
+  --wise-ref-color-lime-300: #B6FF7A;
+  --wise-ref-color-lime-100: #d8ffc4;
+  --wise-ref-color-lime-500: #63d91d;
+  --wise-ref-color-burgundy-800: #3a0407;
+  --wise-ref-color-burgundy-900: #2a0005;
+  --wise-ref-color-blue-50: #eef1ff;
+  --wise-ref-color-blue-100: #dfe5ff;
+  --wise-ref-color-blue-300: #9dbbf2;
+  --wise-ref-color-blue-500: #8795c9;
+  --wise-ref-color-blue-600: #2A4AFF;
+  --wise-ref-color-blue-700: #1d35c8;
+  --wise-ref-color-blue-900: #06123a;
+  --wise-ref-color-peach-300: #f7bf82;
+  --wise-ref-color-coral-300: #ff8391;
+  --wise-ref-color-teal-300: #45cfa9;
+
+  --wise-ref-shadow-0: none;
+  --wise-ref-shadow-1: 0 10px 28px rgb(42 74 255 / 0.10);
+  --wise-ref-shadow-2: 0 18px 44px rgb(10 48 0 / 0.14);
+  --wise-ref-shadow-3: 0 28px 72px rgb(10 48 0 / 0.18);
+
+  --wise-ref-space-0: 0;
+  --wise-ref-space-2: 2px;
+  --wise-ref-space-3: 3px;
+  --wise-ref-space-4: 4px;
+  --wise-ref-space-8: 8px;
+  --wise-ref-space-12: 12px;
+  --wise-ref-space-16: 16px;
+  --wise-ref-space-20: 20px;
+  --wise-ref-space-24: 24px;
+  --wise-ref-space-30: 30px;
+  --wise-ref-space-32: 32px;
+  --wise-ref-space-40: 40px;
+  --wise-ref-space-48: 48px;
+  --wise-ref-space-64: 64px;
+  --wise-ref-space-80: 80px;
+  --wise-ref-space-96: 96px;
+  --wise-ref-space-128: 128px;
+
+  --wise-ref-size-24: 24px;
+  --wise-ref-size-32: 32px;
+  --wise-ref-size-40: 40px;
+  --wise-ref-size-44: 44px;
+  --wise-ref-size-48: 48px;
+  --wise-ref-size-56: 56px;
+  --wise-ref-size-60: 60px;
+  --wise-ref-size-64: 64px;
+  --wise-ref-size-72: 72px;
+  --wise-ref-size-80: 80px;
+  --wise-ref-size-88: 88px;
+  --wise-ref-size-96: 96px;
+  --wise-ref-size-100: 100px;
+  --wise-ref-size-112: 112px;
+  --wise-ref-size-320: 320px;
+
+  --wise-ref-radius-0: 0;
+  --wise-ref-radius-8: 8px;
+  --wise-ref-radius-12: 12px;
+  --wise-ref-radius-16: 16px;
+  --wise-ref-radius-20: 20px;
+  --wise-ref-radius-24: 24px;
+  --wise-ref-radius-28: 28px;
+  --wise-ref-radius-32: 32px;
+  --wise-ref-radius-pill: 999px;
+
+  --wise-ref-font-family-sans: "Inter", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --wise-ref-font-family-display: "Inter Tight", "Arial Black", "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  --wise-ref-font-weight-regular: 400;
+  --wise-ref-font-weight-medium: 500;
+  --wise-ref-font-weight-semibold: 650;
+  --wise-ref-font-weight-bold: 750;
+  --wise-ref-font-weight-heavy: 900;
+  --wise-ref-font-size-13: 13px;
+  --wise-ref-font-size-14: 14px;
+  --wise-ref-font-size-15: 15px;
+  --wise-ref-font-size-17: 17px;
+  --wise-ref-font-size-20: 20px;
+  --wise-ref-font-size-24: 24px;
+  --wise-ref-font-size-28: 28px;
+  --wise-ref-font-size-32: 32px;
+  --wise-ref-font-size-40: 40px;
+  --wise-ref-font-size-56: 56px;
+  --wise-ref-font-size-72: 72px;
+  --wise-ref-line-height-16: 16px;
+  --wise-ref-line-height-20: 20px;
+  --wise-ref-line-height-24: 24px;
+  --wise-ref-line-height-28: 28px;
+  --wise-ref-line-height-32: 32px;
+  --wise-ref-line-height-36: 36px;
+  --wise-ref-line-height-44: 44px;
+  --wise-ref-line-height-60: 60px;
+  --wise-ref-line-height-76: 76px;
+  --wise-ref-letter-spacing-0: 0;
+
+  --wise-ref-duration-0: 0ms;
+  --wise-ref-duration-100: 120ms;
+  --wise-ref-duration-200: 180ms;
+  --wise-ref-duration-300: 260ms;
+  --wise-ref-duration-400: 420ms;
+  --wise-ref-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --wise-ref-easing-emphasized: cubic-bezier(0.2, 0, 0.1, 1);
+
+  /* System layer: shared product semantics. */
+  --wise-sys-color-surface: var(--wise-ref-color-neutral-0);
+  --wise-sys-color-on-surface: var(--wise-ref-color-neutral-900);
+  --wise-sys-color-surface-dark: var(--wise-ref-color-neutral-1000);
+  --wise-sys-color-surface-muted: var(--wise-ref-color-neutral-100);
+  --wise-sys-color-on-surface-muted: var(--wise-ref-color-neutral-700);
+  --wise-sys-color-surface-raised: var(--wise-ref-color-neutral-0);
+  --wise-sys-color-on-surface-raised: var(--wise-ref-color-neutral-900);
+  --wise-sys-color-surface-inverse: var(--wise-ref-color-blue-900);
+  --wise-sys-color-on-surface-inverse: var(--wise-ref-color-neutral-0);
+  --wise-sys-color-surface-brand: var(--wise-ref-color-blue-900);
+  --wise-sys-color-on-surface-brand: var(--wise-ref-color-blue-100);
+  --wise-sys-color-surface-feature-warm: var(--wise-ref-color-yellow-300);
+  --wise-sys-color-on-surface-feature-warm: var(--wise-ref-color-neutral-900);
+  --wise-sys-color-surface-feature-deep: var(--wise-ref-color-burgundy-900);
+  --wise-sys-color-on-surface-feature-deep: var(--wise-ref-color-neutral-0);
+
+  --wise-sys-color-action-primary: var(--wise-ref-color-blue-600);
+  --wise-sys-color-action-primary-hover: var(--wise-ref-color-blue-700);
+  --wise-sys-color-action-primary-pressed: var(--wise-ref-color-blue-700);
+  --wise-sys-color-on-action-primary: var(--wise-ref-color-neutral-0);
+  --wise-sys-color-action-secondary: var(--wise-ref-color-lime-300);
+  --wise-sys-color-action-secondary-hover: var(--wise-ref-color-lime-100);
+  --wise-sys-color-action-secondary-pressed: var(--wise-ref-color-lime-500);
+  --wise-sys-color-on-action-secondary: var(--wise-ref-color-neutral-900);
+  --wise-sys-color-action-inverse: var(--wise-ref-color-neutral-900);
+  --wise-sys-color-action-inverse-hover: var(--wise-ref-color-neutral-700);
+  --wise-sys-color-on-action-inverse: var(--wise-ref-color-neutral-0);
+  --wise-sys-color-focus-ring: var(--wise-ref-color-blue-600);
+  --wise-sys-color-border-subtle: var(--wise-ref-color-neutral-200);
+  --wise-sys-color-border-strong: var(--wise-ref-color-neutral-300);
+  --wise-sys-color-border-selected: var(--wise-ref-color-blue-600);
+  --wise-sys-color-icon-muted: var(--wise-ref-color-neutral-500);
+  --wise-sys-color-icon-active: var(--wise-ref-color-blue-600);
+  --wise-sys-color-chart-blue: var(--wise-ref-color-blue-500);
+  --wise-sys-color-chart-blue-soft: var(--wise-ref-color-blue-300);
+  --wise-sys-color-chart-peach: var(--wise-ref-color-peach-300);
+  --wise-sys-color-chart-coral: var(--wise-ref-color-coral-300);
+  --wise-sys-color-chart-teal: var(--wise-ref-color-teal-300);
+  --wise-sys-color-chart-neutral: var(--wise-ref-color-neutral-300);
+
+  --wise-sys-space-inline-xs: var(--wise-ref-space-4);
+  --wise-sys-space-inline-sm: var(--wise-ref-space-8);
+  --wise-sys-space-inline-md: var(--wise-ref-space-12);
+  --wise-sys-space-inline-lg: var(--wise-ref-space-16);
+  --wise-sys-space-inline-xl: var(--wise-ref-space-24);
+  --wise-sys-space-stack-xs: var(--wise-ref-space-8);
+  --wise-sys-space-stack-sm: var(--wise-ref-space-12);
+  --wise-sys-space-stack-md: var(--wise-ref-space-20);
+  --wise-sys-space-stack-lg: var(--wise-ref-space-32);
+  --wise-sys-space-stack-xl: var(--wise-ref-space-48);
+  --wise-sys-space-inset-sm: var(--wise-ref-space-12);
+  --wise-sys-space-inset-md: var(--wise-ref-space-16);
+  --wise-sys-space-inset-lg: var(--wise-ref-space-24);
+  --wise-sys-space-inset-xl: var(--wise-ref-space-32);
+  --wise-sys-space-page-inline: var(--wise-ref-space-20);
+  --wise-sys-space-page-block: var(--wise-ref-space-32);
+
+  --wise-sys-size-control-sm: var(--wise-ref-size-40);
+  --wise-sys-size-control-md: var(--wise-ref-size-48);
+  --wise-sys-size-control-lg: var(--wise-ref-size-56);
+  --wise-sys-size-control-xl: var(--wise-ref-size-60);
+  --wise-sys-size-avatar-md: var(--wise-ref-size-56);
+  --wise-sys-size-avatar-lg: var(--wise-ref-size-72);
+  --wise-sys-size-media-md: var(--wise-ref-size-80);
+  --wise-sys-size-header: var(--wise-ref-size-88);
+  --wise-sys-size-nav: var(--wise-ref-size-80);
+  --wise-sys-size-content-sm: var(--wise-ref-size-100);
+  --wise-sys-size-content-lg: var(--wise-ref-size-320);
+
+  --wise-sys-radius-control: var(--wise-ref-radius-pill);
+  --wise-sys-radius-icon: var(--wise-ref-radius-pill);
+  --wise-sys-radius-card-sm: var(--wise-ref-radius-20);
+  --wise-sys-radius-card-md: var(--wise-ref-radius-24);
+  --wise-sys-radius-card-lg: var(--wise-ref-radius-32);
+  --wise-sys-radius-sheet: var(--wise-ref-radius-28);
+
+  --wise-sys-font-family-ui: var(--wise-ref-font-family-sans);
+  --wise-sys-font-family-display: var(--wise-ref-font-family-display);
+  --wise-sys-font-weight-body: var(--wise-ref-font-weight-regular);
+  --wise-sys-font-weight-label: var(--wise-ref-font-weight-semibold);
+  --wise-sys-font-weight-title: var(--wise-ref-font-weight-bold);
+  --wise-sys-font-weight-display: var(--wise-ref-font-weight-heavy);
+  --wise-sys-type-display-xl-size: var(--wise-ref-font-size-72);
+  --wise-sys-type-display-xl-line-height: var(--wise-ref-line-height-76);
+  --wise-sys-type-display-lg-size: var(--wise-ref-font-size-56);
+  --wise-sys-type-display-lg-line-height: var(--wise-ref-line-height-60);
+  --wise-sys-type-title-xl-size: var(--wise-ref-font-size-40);
+  --wise-sys-type-title-xl-line-height: var(--wise-ref-line-height-44);
+  --wise-sys-type-title-lg-size: var(--wise-ref-font-size-32);
+  --wise-sys-type-title-lg-line-height: var(--wise-ref-line-height-36);
+  --wise-sys-type-title-md-size: var(--wise-ref-font-size-24);
+  --wise-sys-type-title-md-line-height: var(--wise-ref-line-height-32);
+  --wise-sys-type-body-lg-size: var(--wise-ref-font-size-20);
+  --wise-sys-type-body-lg-line-height: var(--wise-ref-line-height-28);
+  --wise-sys-type-body-md-size: var(--wise-ref-font-size-17);
+  --wise-sys-type-body-md-line-height: var(--wise-ref-line-height-24);
+  --wise-sys-type-body-sm-size: var(--wise-ref-font-size-15);
+  --wise-sys-type-body-sm-line-height: var(--wise-ref-line-height-20);
+  --wise-sys-type-label-sm-size: var(--wise-ref-font-size-13);
+  --wise-sys-type-label-sm-line-height: var(--wise-ref-line-height-16);
+  --wise-sys-type-letter-spacing: var(--wise-ref-letter-spacing-0);
+
+  --wise-sys-elevation-flat: var(--wise-ref-shadow-0);
+  --wise-sys-elevation-raised: var(--wise-ref-shadow-1);
+  --wise-sys-elevation-card: var(--wise-ref-shadow-2);
+  --wise-sys-elevation-overlay: var(--wise-ref-shadow-3);
+
+  --wise-sys-motion-duration-none: var(--wise-ref-duration-0);
+  --wise-sys-motion-duration-fast: var(--wise-ref-duration-100);
+  --wise-sys-motion-duration-standard: var(--wise-ref-duration-200);
+  --wise-sys-motion-duration-slow: var(--wise-ref-duration-300);
+  --wise-sys-motion-duration-ambient: var(--wise-ref-duration-400);
+  --wise-sys-motion-easing-standard: var(--wise-ref-easing-standard);
+  --wise-sys-motion-easing-emphasized: var(--wise-ref-easing-emphasized);
+
+  /* Component layer: component-facing slots, sys references only. */
+  --wise-comp-screen-background: var(--wise-sys-color-surface);
+  --wise-comp-screen-foreground: var(--wise-sys-color-on-surface);
+  --wise-comp-screen-padding-inline: var(--wise-sys-space-page-inline);
+  --wise-comp-screen-padding-block: var(--wise-sys-space-page-block);
+
+  --wise-comp-app-bar-height: var(--wise-sys-size-header);
+  --wise-comp-app-bar-background: var(--wise-sys-color-surface);
+  --wise-comp-app-bar-foreground: var(--wise-sys-color-on-surface);
+  --wise-comp-app-bar-action-background: var(--wise-sys-color-surface-muted);
+  --wise-comp-app-bar-action-foreground: var(--wise-sys-color-icon-active);
+
+  --wise-comp-button-primary-container: var(--wise-sys-color-action-primary);
+  --wise-comp-button-primary-foreground: var(--wise-sys-color-on-action-primary);
+  --wise-comp-button-primary-hover-container: var(--wise-sys-color-action-primary-hover);
+  --wise-comp-button-primary-pressed-container: var(--wise-sys-color-action-primary-pressed);
+  --wise-comp-button-secondary-container: var(--wise-sys-color-action-secondary);
+  --wise-comp-button-secondary-foreground: var(--wise-sys-color-on-action-secondary);
+  --wise-comp-button-secondary-hover-container: var(--wise-sys-color-action-secondary-hover);
+  --wise-comp-button-secondary-pressed-container: var(--wise-sys-color-action-secondary-pressed);
+  --wise-comp-button-inverse-container: var(--wise-sys-color-action-inverse);
+  --wise-comp-button-inverse-foreground: var(--wise-sys-color-on-action-inverse);
+  --wise-comp-button-height: var(--wise-sys-size-control-lg);
+  --wise-comp-button-padding-inline: var(--wise-sys-space-inset-xl);
+  --wise-comp-button-gap: var(--wise-sys-space-inline-sm);
+  --wise-comp-button-radius: var(--wise-sys-radius-control);
+  --wise-comp-button-font-family: var(--wise-sys-font-family-ui);
+  --wise-comp-button-font-size: var(--wise-sys-type-body-lg-size);
+  --wise-comp-button-font-weight: var(--wise-sys-font-weight-label);
+  --wise-comp-button-line-height: var(--wise-sys-type-body-lg-line-height);
+  --wise-comp-button-focus-ring: var(--wise-sys-color-focus-ring);
+
+  --wise-comp-icon-button-size: var(--wise-sys-size-control-md);
+  --wise-comp-icon-button-container: var(--wise-sys-color-surface-muted);
+  --wise-comp-icon-button-foreground: var(--wise-sys-color-icon-active);
+  --wise-comp-icon-button-radius: var(--wise-sys-radius-icon);
+
+  --wise-comp-bottom-nav-height: var(--wise-sys-size-nav);
+  --wise-comp-bottom-nav-background: var(--wise-sys-color-surface);
+  --wise-comp-bottom-nav-border: var(--wise-sys-color-border-subtle);
+  --wise-comp-bottom-nav-active: var(--wise-sys-color-icon-active);
+  --wise-comp-bottom-nav-inactive: var(--wise-sys-color-icon-muted);
+  --wise-comp-bottom-nav-label-size: var(--wise-sys-type-body-sm-size);
+  --wise-comp-bottom-nav-label-weight: var(--wise-sys-font-weight-label);
+
+  --wise-comp-shortcut-card-size: var(--wise-sys-size-content-sm);
+  --wise-comp-shortcut-card-icon-image-size: var(--wise-sys-size-control-xl);
+
+  --wise-comp-insight-card-icon-image-size: var(--wise-sys-size-control-xl);
+
+  --wise-comp-card-background: var(--wise-sys-color-surface-raised);
+  --wise-comp-card-foreground: var(--wise-sys-color-on-surface-raised);
+  --wise-comp-card-radius: var(--wise-sys-radius-card-md);
+  --wise-comp-card-padding: var(--wise-sys-space-inset-lg);
+  --wise-comp-card-gap: var(--wise-sys-space-stack-md);
+  --wise-comp-card-shadow: var(--wise-sys-elevation-raised);
+
+  --wise-comp-promo-card-background-warm: var(--wise-sys-color-surface-feature-warm);
+  --wise-comp-promo-card-foreground-warm: var(--wise-sys-color-on-surface-feature-warm);
+  --wise-comp-promo-card-background-deep: var(--wise-sys-color-surface-feature-deep);
+  --wise-comp-promo-card-foreground-deep: var(--wise-sys-color-on-surface-feature-deep);
+  --wise-comp-promo-card-radius: var(--wise-sys-radius-card-lg);
+  --wise-comp-promo-card-padding: var(--wise-sys-space-inset-lg);
+  --wise-comp-promo-card-shadow: var(--wise-sys-elevation-flat);
+  --wise-comp-hero-card-height: var(--wise-sys-size-content-lg);
+
+  --wise-comp-card-carousel-shadow: var(--wise-sys-elevation-card);
+  --wise-comp-card-carousel-radius: var(--wise-sys-radius-card-sm);
+
+  --wise-comp-avatar-size: var(--wise-sys-size-avatar-lg);
+  --wise-comp-avatar-background: var(--wise-sys-color-surface);
+  --wise-comp-avatar-foreground: var(--wise-sys-color-on-surface-muted);
+  --wise-comp-avatar-border: var(--wise-sys-color-border-strong);
+
+  --wise-comp-list-row-gap: var(--wise-sys-space-inline-lg);
+  --wise-comp-list-row-padding-block: var(--wise-sys-space-inset-md);
+  --wise-comp-list-row-icon-size: var(--wise-sys-size-avatar-md);
+  --wise-comp-list-row-title-size: var(--wise-sys-type-title-md-size);
+  --wise-comp-list-row-title-weight: var(--wise-sys-font-weight-title);
+  --wise-comp-list-row-meta-color: var(--wise-sys-color-on-surface-muted);
+
+  --wise-comp-category-shopping-color: var(--wise-sys-color-chart-blue);
+  --wise-comp-category-eating-color: var(--wise-sys-color-chart-blue-soft);
+  --wise-comp-category-general-color: var(--wise-sys-color-chart-neutral);
+  --wise-comp-category-bills-color: var(--wise-sys-color-chart-peach);
+  --wise-comp-category-groceries-color: var(--wise-sys-color-chart-coral);
+  --wise-comp-category-transfer-color: var(--wise-sys-color-chart-teal);
+
+  --wise-comp-onboarding-background: var(--wise-sys-color-surface);
+  --wise-comp-onboarding-foreground: var(--wise-sys-color-on-surface);
+  --wise-comp-onboarding-progress: var(--wise-sys-color-border-selected);
+  --wise-comp-onboarding-title-family: var(--wise-sys-font-family-display);
+  --wise-comp-onboarding-title-size: var(--wise-sys-type-display-lg-size);
+  --wise-comp-onboarding-title-line-height: var(--wise-sys-type-display-lg-line-height);
+  --wise-comp-onboarding-title-weight: var(--wise-sys-font-weight-display);
+
+  --wise-comp-success-background: var(--wise-sys-color-surface-brand);
+  --wise-comp-success-foreground: var(--wise-sys-color-on-surface-brand);
+  --wise-comp-success-body-foreground: var(--wise-sys-color-on-surface-inverse);
+  --wise-comp-success-title-family: var(--wise-sys-font-family-display);
+  --wise-comp-success-title-size: var(--wise-sys-type-display-lg-size);
+  --wise-comp-success-title-line-height: var(--wise-sys-type-display-lg-line-height);
+  --wise-comp-success-title-weight: var(--wise-sys-font-weight-display);
+}
+
+@keyframes wise-enter-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wise-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --wise-sys-motion-duration-fast: var(--wise-sys-motion-duration-none);
+    --wise-sys-motion-duration-standard: var(--wise-sys-motion-duration-none);
+    --wise-sys-motion-duration-slow: var(--wise-sys-motion-duration-none);
+    --wise-sys-motion-duration-ambient: var(--wise-sys-motion-duration-none);
+  }
+}

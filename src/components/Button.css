@@ -1,0 +1,83 @@
+.ui-button {
+  display: inline-flex;
+  min-height: var(--comp-button-height);
+  align-items: center;
+  justify-content: center;
+  gap: var(--comp-button-gap);
+  padding-inline: var(--comp-button-padding-inline);
+  border: none;
+  border-radius: var(--comp-button-radius);
+  color: var(--comp-button-fg);
+  background: var(--comp-button-bg);
+  font-family: var(--comp-button-font);
+  font-size: var(--comp-button-font-size);
+  font-weight: var(--comp-button-font-weight);
+  line-height: var(--comp-button-line-height);
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    transform var(--comp-motion-standard) var(--comp-motion-ease),
+    background var(--comp-motion-standard) var(--comp-motion-ease);
+}
+
+.ui-button:hover:not(:disabled) {
+  background: var(--comp-button-hover-bg);
+  transform: translateY(calc(var(--comp-state-hover-lift) * -1));
+}
+
+.ui-button:active:not(:disabled) {
+  transform: translateY(var(--comp-state-rest));
+}
+
+.ui-button:focus-visible {
+  outline: var(--comp-state-focus-width) solid var(--comp-button-focus-ring);
+  outline-offset: var(--comp-state-focus-offset);
+}
+
+.ui-button:disabled {
+  color: var(--comp-button-disabled-fg);
+  background: var(--comp-button-disabled-bg);
+}
+
+.ui-button--secondary {
+  color: var(--comp-button-secondary-fg);
+  background: var(--comp-button-secondary-bg);
+}
+
+.ui-button--secondary:hover:not(:disabled) {
+  background: var(--comp-button-secondary-hover-bg);
+}
+
+.ui-button--inverse {
+  color: var(--comp-button-inverse-fg);
+  background: var(--comp-button-inverse-bg);
+}
+
+.ui-button--ghost {
+  color: var(--comp-button-ghost-fg);
+  background: transparent;
+}
+
+.ui-button__label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ui-button .ui-icon {
+  color: currentColor;
+}
+
+.ui-button__spinner {
+  width: var(--comp-icon-size-sm);
+  height: var(--comp-icon-size-sm);
+  border: var(--comp-state-focus-width) solid currentColor;
+  border-block-start-color: transparent;
+  border-radius: var(--comp-button-radius);
+  animation: ui-button-spin var(--comp-motion-slow) linear infinite;
+}
+
+@keyframes ui-button-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}

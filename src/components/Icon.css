@@ -1,0 +1,19 @@
+.ui-icon {
+  width: var(--comp-icon-size-md);
+  height: var(--comp-icon-size-md);
+  flex: none;
+  color: var(--comp-icon-fg);
+}
+
+.ui-icon--sm {
+  width: var(--comp-icon-size-sm);
+  height: var(--comp-icon-size-sm);
+}
+
+.ui-icon--muted {
+  color: var(--comp-icon-muted-fg);
+}
+
+.ui-icon--primary {
+  color: var(--comp-icon-primary-fg);
+}

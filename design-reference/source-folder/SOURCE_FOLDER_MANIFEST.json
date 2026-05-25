@@ -1,0 +1,900 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-25T07:16:01.471Z",
+  "rootName": "testing-demo-v2",
+  "fileCount": 154,
+  "packagedFileCount": 34,
+  "excludedFileCount": 120,
+  "totalBytes": 16610383,
+  "packagedBytes": 7576741,
+  "caps": {
+    "maxFiles": 300,
+    "maxTotalBytes": 41943040,
+    "maxFileBytes": 8388608
+  },
+  "entryCandidates": [
+    "testing-demo-v2/talk-ui/index.html"
+  ],
+  "designSystemCandidates": [
+    "testing-demo-v2/ref/wise/docs/design-system.md"
+  ],
+  "tokenCandidates": [
+    "testing-demo-v2/tokens/design-tokens.css",
+    "testing-demo-v2/tokens/design-tokens.json"
+  ],
+  "stylesheetCandidates": [
+    "testing-demo-v2/talk-ui/homepage.css"
+  ],
+  "componentCandidates": [],
+  "productDocCandidates": [],
+  "assetCandidates": [
+    "testing-demo-v2/talk-ui/imgs/icon-01.png",
+    "testing-demo-v2/talk-ui/imgs/icon-03.png",
+    "testing-demo-v2/talk-ui/imgs/avatar-2.jpg",
+    "testing-demo-v2/talk-ui/imgs/avatar-3.jpg",
+    "testing-demo-v2/talk-ui/imgs/icon-02.png",
+    "testing-demo-v2/talk-ui/imgs/icon-06.png",
+    "testing-demo-v2/talk-ui/imgs/img-bg-01.jpg",
+    "testing-demo-v2/talk-ui/imgs/icon-07.png",
+    "testing-demo-v2/talk-ui/imgs/icon-05.png",
+    "testing-demo-v2/talk-ui/imgs/img-bg-03.jpg",
+    "testing-demo-v2/talk-ui/imgs/img-bg-02.jpg",
+    "testing-demo-v2/talk-ui/imgs/icon-04.png",
+    "testing-demo-v2/talk-ui/imgs/Screenshot 2026-05-21 at 12.00.44 PM 1.jpg",
+    "testing-demo-v2/talk-ui/imgs/avatar.jpg",
+    "testing-demo-v2/talk-ui/imgs/old/IMG_6107.jpg",
+    "testing-demo-v2/talk-ui/imgs/old/IMG_6106.jpg",
+    "testing-demo-v2/talk-ui/imgs/old/IMG_6110.jpg",
+    "testing-demo-v2/talk-ui/imgs/old/IMG_6111.jpg",
+    "testing-demo-v2/talk-ui/imgs/old/IMG_6108.jpg",
+    "testing-demo-v2/talk-ui/imgs/old/IMG_6109.jpg",
+    "testing-demo-v2/ref/wise/Wise iOS 49.png",
+    "testing-demo-v2/ref/wise/Wise iOS 6.png",
+    "testing-demo-v2/ref/wise/Wise iOS 389.png",
+    "testing-demo-v2/ref/wise/Wise iOS 24.png",
+    "testing-demo-v2/ref/wise/Wise iOS 158.png",
+    "testing-demo-v2/ref/wise/Wise iOS 47.png"
+  ],
+  "files": [
+    {
+      "path": "testing-demo-v2/tokens/design-tokens.css",
+      "size": 18202,
+      "type": "text/css",
+      "extension": "css",
+      "category": "token-source"
+    },
+    {
+      "path": "testing-demo-v2/tokens/design-tokens.json",
+      "size": 27452,
+      "type": "application/json",
+      "extension": "json",
+      "category": "token-source"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/index.html",
+      "size": 406,
+      "type": "text/html",
+      "extension": "html",
+      "category": "entry-html"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/homepage.css",
+      "size": 41888,
+      "type": "text/css",
+      "extension": "css",
+      "category": "stylesheet"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/homepage.js",
+      "size": 19477,
+      "type": "text/javascript",
+      "extension": "js",
+      "category": "source-code"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/i18n/zh-TW.json",
+      "size": 7939,
+      "type": "application/json",
+      "extension": "json",
+      "category": "other"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/md/ux-feedback.md",
+      "size": 6317,
+      "type": "text/markdown",
+      "extension": "md",
+      "category": "other"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/icon-01.png",
+      "size": 60199,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/icon-03.png",
+      "size": 2141,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/avatar-2.jpg",
+      "size": 136711,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/avatar-3.jpg",
+      "size": 152399,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/icon-02.png",
+      "size": 2232,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/icon-06.png",
+      "size": 2726,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/img-bg-01.jpg",
+      "size": 52830,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/icon-07.png",
+      "size": 2148,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/icon-05.png",
+      "size": 1818,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/img-bg-03.jpg",
+      "size": 30178,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/img-bg-02.jpg",
+      "size": 41446,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/icon-04.png",
+      "size": 1702,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/Screenshot 2026-05-21 at 12.00.44 PM 1.jpg",
+      "size": 117402,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/avatar.jpg",
+      "size": 117402,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/old/IMG_6107.jpg",
+      "size": 267077,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/old/IMG_6106.jpg",
+      "size": 190071,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/old/IMG_6110.jpg",
+      "size": 135782,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/old/IMG_6111.jpg",
+      "size": 20733,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/old/IMG_6108.jpg",
+      "size": 124833,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/old/IMG_6109.jpg",
+      "size": 134068,
+      "type": "image/jpeg",
+      "extension": "jpg",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/ref/wise/Wise iOS 49.png",
+      "size": 785507,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/ref/wise/Wise iOS 6.png",
+      "size": 1183300,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/ref/wise/Wise iOS 389.png",
+      "size": 1570706,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/ref/wise/Wise iOS 24.png",
+      "size": 767592,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/ref/wise/Wise iOS 158.png",
+      "size": 668166,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/ref/wise/Wise iOS 47.png",
+      "size": 869806,
+      "type": "image/png",
+      "extension": "png",
+      "category": "asset"
+    },
+    {
+      "path": "testing-demo-v2/ref/wise/docs/design-system.md",
+      "size": 16085,
+      "type": "text/markdown",
+      "extension": "md",
+      "category": "design-doc"
+    }
+  ],
+  "excluded": [
+    {
+      "path": "testing-demo-v2/.DS_Store",
+      "size": 6148,
+      "reason": "unsupported-file-type"
+    },
+    {
+      "path": "testing-demo-v2/.git/config",
+      "size": 311,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/HEAD",
+      "size": 21,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/index",
+      "size": 3434,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/COMMIT_EDITMSG",
+      "size": 37,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/FETCH_HEAD",
+      "size": 101,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/sourcetreeconfig",
+      "size": 174,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/refs/remotes/origin/main",
+      "size": 41,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/refs/heads/main",
+      "size": 41,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/logs/HEAD",
+      "size": 2715,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/logs/refs/remotes/origin/main",
+      "size": 1040,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/logs/refs/heads/main",
+      "size": 1509,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/8e/658bffd0075fd3a51ce4704b656385b49229b4",
+      "size": 3440,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/14/99aea205456a3c81439d2af7df7ab6ef1c3487",
+      "size": 61,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/13/7012f4d6b7c4d659bd9483ebc59c735d0dfe8f",
+      "size": 7464,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/49/12675b3ae64153c2be59aa5db495b06a96442e",
+      "size": 106,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/1c/1d025ee7c16a0264bc9f9c79a0a72fe6c731d4",
+      "size": 202,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/71/17d3a75a960f5be55b4e4d25f3d90d4369dbfe",
+      "size": 134898,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/8c/b57eae13fd4da9da1361ce63723ce557f9ccce",
+      "size": 115,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/4f/acf6f972224c1fb8de33ca026160854954bdca",
+      "size": 3117,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/4a/baa64557dbc5b56472fb367136b050eeada495",
+      "size": 3732,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/1e/5f6a5c81c6c2bd6b3fc8a670cd1ad6c744581c",
+      "size": 90,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/70/1dbdc0ceff17480223da6b1084d774c0a56a45",
+      "size": 460,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/46/f0007ba5db91dd0cb61a04074e97415ceecd60",
+      "size": 3304,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/e0/36f4458f71e5f2226760cd56114d40d0563e70",
+      "size": 272,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/ce/180dbab2a3b1cc906fa859d1c55a5298252171",
+      "size": 460,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/e7/d710af5304323864c1decc9679c63ce8fff8cc",
+      "size": 202,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/f1/572b995378c6457fb01eb02a4d366593c91a23",
+      "size": 7316,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/f1/4e4e596e3c29e459028c750f907913f85d6597",
+      "size": 226,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/fa/d83e0e1f11b45ace9eb412956ce123581fd0c3",
+      "size": 237249,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/e8/97a670d6b68e7531b721689c5c9f3871bbbe16",
+      "size": 635074,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/f7/09a3ff916f578f67afd3eb0afb8f7572f26f03",
+      "size": 117744,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/cd/052a61a198035fd6fb884276721be09230fd2a",
+      "size": 3314,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/e1/706b244d21b4f1cd904b2c13be027a0cd5e0da",
+      "size": 130148,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/c3/c08a137683044de4e34ed97996ba800023b957",
+      "size": 60030,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/de/6f39419ab2a0373a7bd47367571e97aacc94ae",
+      "size": 201879,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/dc/282832f9574c0cb282b12d48636d8e75b9ec1f",
+      "size": 106,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/dc/0bcc91fc6fdc266b699fb20561695d28efacb3",
+      "size": 7215,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/b1/27d04a641a52499f26d93be9b56dbc546d92e7",
+      "size": 3304,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/6c/46b315479e2171eca2e4a3cb9dfca594fe1630",
+      "size": 5958,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/6d/25f29c084df8b5905469747dfd50b424481a11",
+      "size": 16314,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/08/7d37b1b58093f9fa0bfa8ce6af2c336bc94186",
+      "size": 99590,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/5b/8baf7a0832438f22aade044adc212cda6fc53d",
+      "size": 36626,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/5e/17e7a50cb6bf1fa4f39f6da6a7576325001134",
+      "size": 106714,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/5e/ca78c3b08aab153b388463463bf0a777389100",
+      "size": 201,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/30/7a03dcbdfee48d1ae6327eac1b933dfb6e2a4f",
+      "size": 5952,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/54/92209e512eaf4cf42fbf6f559ca952a06b0815",
+      "size": 111646,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/65/152cbe2f06239d074ff7bf681c7a733f401485",
+      "size": 460,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/31/a2ca0d3d652dc169ae772301e7d6be01e21d43",
+      "size": 170,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/5d/134379061347e4e7fbd6090a0abf64c9a99cfb",
+      "size": 134,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/5c/df7dc6350678c7825eb8066334c713c26eed2d",
+      "size": 190,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/07/89c4ecc4bd8cd60e815da778f5f842a2be989e",
+      "size": 2130,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/9f/965f772abcc5c6f540a7b21c6b35f47a5c89ca",
+      "size": 2625,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/44/9a146bc4daf3ca9769ed35ff73f13982ea8229",
+      "size": 55,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/4d/c0d1b30f31584ce386d52b282372c97118974e",
+      "size": 202,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/21/cc0a7002cf92cab3743b40fb7ee083e24603eb",
+      "size": 106,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/4c/924da10de54fe849f7990bfbf7ef326a783660",
+      "size": 3411,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/19/4485ac7ba5dc13d132aca6d53cb76bcefcc8fb",
+      "size": 106,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/8f/8c0d8abd96422c295a6fec15f248acd4e8bc46",
+      "size": 2031,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/8f/3404555b3173cb525910ad170df29759b8d16f",
+      "size": 460,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/7b/d4abd2ab0841d586513ba715b357f3af9c0230",
+      "size": 1545082,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/1a/49d7ad80afac901093ce9c325ea3c0ff8ee0ac",
+      "size": 96110,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/74/87adac0e6ee1c86726ad5620c5fe87c28025b2",
+      "size": 25440,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/80/0be4bfbf4f39a26a99cc78af5adfa4c702bb8e",
+      "size": 108821,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/80/442adb0b369aa8ea6f7277bac62088f4df6788",
+      "size": 213050,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/89/09623dc2453c344fe4ca083315b7fd50ea4a76",
+      "size": 163,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/16/53b4dba34380d1f900379667c4f229e8dbb784",
+      "size": 153683,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/7c/0dd55d952ef8f5e26c7ecff0d0a6ad878273e8",
+      "size": 190727,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/11/7bad9b607ac828a6abb1854b62a925caa12b1d",
+      "size": 7475,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/11/74dd3aefa7cfe541af50317f7a90c27aef4680",
+      "size": 7239,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/27/69df0af7f389c0bf740131adcd1ee8e35fadb6",
+      "size": 55,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/ed/2b7f7f5f8857b78205a6c6e384a46db8438a6b",
+      "size": 106,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/ed/a040034bf68f695e9b6a7b9b1ebb432b46857a",
+      "size": 202,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/e4/b169cefb0b1cd144beb3aa41cca43ecd1c91d0",
+      "size": 46,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/fc/0fe34a10ccd6196c7c911e7668772fba3f252f",
+      "size": 843047,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/c9/05f4267ef6699c52d9a75ece5899d9c958ff17",
+      "size": 7567,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/e2/9492fce75b65a4bbff517d7d6a6a57128e55f1",
+      "size": 381,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/e2/4ef1c8ce78bd2c4f05188445cd729bc4911d1d",
+      "size": 2066,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/ab/d66b393189dd2dd547cbd0e87c6f1a055af00f",
+      "size": 55,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/a2/630a1280aad632656251343d9479a5d55add04",
+      "size": 7207,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/da/63a077e4b41233f2ffec3061ead2cf88031c2d",
+      "size": 202,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/df/a6c3ab98e68f86a2b703234f66cbd3259ad95d",
+      "size": 155,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/b3/73718b6e64bc22a0499bc06e75e44d1d86a27e",
+      "size": 3294,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/be/7004945ac9a6a2382e8e74fea38151cd8b8661",
+      "size": 59,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/d0/96e76532db48d8c6bb8df83c77cd6850333884",
+      "size": 1513,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/ac/7413d83dcd0b9fa28d96a07f42158652e9a972",
+      "size": 1158731,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/b5/5758c5def23b6a50a2d802727d15ffa87316c0",
+      "size": 152493,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/b5/ce2465fbbd6b27fbe6609a0795bef6199c5cb7",
+      "size": 202,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/a4/7706f70cd904409687450c36ffa68827353c39",
+      "size": 153,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/a4/cdaa2035d4da896cc170e865d5723b6449ab8e",
+      "size": 106,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/02/6284034cbaa40215164151d79fac206769bf03",
+      "size": 112200,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/02/a16407210b25d6b44f1b95b4e9e2a258afd35e",
+      "size": 55,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/05/144fc96ab3e13df8d7e3c7e23e7defd1dd2500",
+      "size": 148569,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/33/ada25025e43b45e81a20f73cb75c0dca83d144",
+      "size": 162,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/60/df3132525047ea12ee814077de51c086f9c104",
+      "size": 738875,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/0e/90d61a71d5aa0d9a54fb63de9da51c91ef1c00",
+      "size": 3401,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/3d/b9d925b82bdaa22dc4cd16edf6ca7e8a81d030",
+      "size": 7257,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/3d/1eb1a67b1b58924f999fe0962515c0873675e4",
+      "size": 212750,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/56/eb946b803570acc7dc652b8ef99fec7fa7f332",
+      "size": 106,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/56/8a57f2a825c250ebc00c829e77c5812bf956fb",
+      "size": 47664,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/69/4b83cf96e735bbabdb1d4b07f381b2c799f079",
+      "size": 158818,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/35/f4240151c9120b2eb84a34622b308b882565ed",
+      "size": 196,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/35/f1dc38a6d4d69c6e8477b00922b84d739e95ed",
+      "size": 202,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/04/ed9d27e2b25fc6aab9656dee1d88951ada83a8",
+      "size": 61,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/9b/f4b85cad3e58c794ee14ba52e69f084e8e29be",
+      "size": 157,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/9b/0f87892c48f67e940f5caa3116f5d6c5bc8adc",
+      "size": 90,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/03/cb688b160c0e0de13048cddc5661b5947bc236",
+      "size": 146,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/03/e02c0e471175c6c333d664e5e75a7996a373aa",
+      "size": 755254,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/50/51dc10a66e831b676a86409bf007912feb5006",
+      "size": 114830,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/0c/0d3083adb2d8325eeb8333b4a2b91e0c29dfb8",
+      "size": 162,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/0c/340ae941030df1f33f2bd6795e04f08aa160b7",
+      "size": 106,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/objects/59/bb0b35d4d77ec020a036268f994f3dd24155a6",
+      "size": 1777,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/cursor/crepe/8cb57eae13fd4da9da1361ce63723ce557f9ccce/metadata.json",
+      "size": 30,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/cursor/crepe/8cb57eae13fd4da9da1361ce63723ce557f9ccce/index.bin",
+      "size": 145464,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/.git/cursor/crepe/8cb57eae13fd4da9da1361ce63723ce557f9ccce/postings.bin",
+      "size": 56959,
+      "reason": "generated-directory"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/.DS_Store",
+      "size": 6148,
+      "reason": "unsupported-file-type"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/.DS_Store",
+      "size": 6148,
+      "reason": "unsupported-file-type"
+    },
+    {
+      "path": "testing-demo-v2/talk-ui/imgs/Media/.DS_Store",
+      "size": 6148,
+      "reason": "unsupported-file-type"
+    },
+    {
+      "path": "testing-demo-v2/ref/.DS_Store",
+      "size": 6148,
+      "reason": "unsupported-file-type"
+    },
+    {
+      "path": "testing-demo-v2/ref/wise/.DS_Store",
+      "size": 6148,
+      "reason": "unsupported-file-type"
+    }
+  ]
+}

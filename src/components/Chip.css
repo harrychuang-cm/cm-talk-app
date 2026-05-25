@@ -1,0 +1,39 @@
+.ui-chip {
+  display: inline-flex;
+  min-height: var(--comp-chip-height);
+  align-items: center;
+  justify-content: center;
+  padding-inline: var(--comp-chip-padding-inline);
+  border: var(--comp-card-border-width) solid transparent;
+  border-radius: var(--comp-chip-radius);
+  color: var(--comp-chip-fg);
+  background: var(--comp-chip-bg);
+  font-size: var(--comp-chip-font-size);
+  font-weight: var(--comp-chip-weight);
+  line-height: var(--comp-chip-line);
+  white-space: nowrap;
+}
+
+.ui-chip--outlined {
+  border-color: var(--comp-chip-border);
+  background: transparent;
+}
+
+.ui-chip--selected {
+  color: var(--comp-chip-selected-fg);
+  background: var(--comp-chip-selected-bg);
+}
+
+.ui-chip--disabled {
+  color: var(--comp-button-disabled-fg);
+  background: var(--comp-button-disabled-bg);
+}
+
+.ui-chip--button {
+  cursor: pointer;
+}
+
+.ui-chip--button:focus-visible {
+  outline: var(--comp-state-focus-width) solid var(--comp-button-focus-ring);
+  outline-offset: var(--comp-state-focus-offset);
+}

@@ -1,0 +1,45 @@
+.ui-dialog-backdrop {
+  position: fixed;
+  inset: var(--comp-sys-space-zero);
+  z-index: var(--comp-ref-size-40);
+  display: grid;
+  align-items: end;
+  background: color-mix(in srgb, var(--comp-sheet-scrim) 52%, transparent);
+}
+
+.ui-dialog {
+  display: grid;
+  gap: var(--comp-card-gap);
+  max-height: calc(var(--comp-ref-size-screen) - var(--comp-sys-space-4xl));
+  overflow-y: auto;
+  padding: var(--comp-sheet-padding);
+  border-radius: var(--comp-sheet-radius) var(--comp-sheet-radius) var(--comp-sys-radius-none) var(--comp-sys-radius-none);
+  color: var(--comp-sheet-fg);
+  background: var(--comp-sheet-bg);
+  box-shadow: var(--comp-sheet-shadow);
+}
+
+.ui-dialog__header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: var(--comp-sys-space-lg);
+}
+
+.ui-dialog__title {
+  margin: var(--comp-sys-space-zero);
+  font-family: var(--comp-sys-font-display);
+  font-size: var(--comp-sys-type-title-lg-size);
+  font-weight: var(--comp-sys-weight-display);
+  line-height: var(--comp-sys-type-title-lg-line);
+}
+
+.ui-dialog__body {
+  color: var(--comp-sheet-muted-fg);
+  font-size: var(--comp-sys-type-body-md-size);
+  line-height: var(--comp-sys-type-body-md-line);
+}
+
+.ui-dialog__actions {
+  display: grid;
+}

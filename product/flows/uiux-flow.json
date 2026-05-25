@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "productName": "design-spec",
+  "generatedAt": null,
+  "source": "product/PRD.md + product/SCREEN_MANIFEST.json + product/FEATURE_MANIFEST.json",
+  "nodes": [],
+  "edges": [],
+  "notes": "Auto-populated by /prd once the PRD has real content. Do not hand-author positions — the Storybook Product Overview page runs @dagrejs/dagre to lay out at render time."
+}

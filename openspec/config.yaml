@@ -1,0 +1,7 @@
+schema: spec-driven
+context: |
+  App: design-spec
+  Platform: mobile
+  Stack: React, TypeScript, Vite, CSS custom properties
+  Design system: M3-aligned tokens from design-reference/
+  Spectra schema: spec-driven

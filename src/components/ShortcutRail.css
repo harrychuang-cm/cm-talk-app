@@ -1,0 +1,57 @@
+.shortcut-rail {
+  padding-block: var(--comp-sys-space-sm) var(--comp-sys-space-zero);
+}
+
+.shortcut-rail__track {
+  display: grid;
+  grid-auto-columns: var(--comp-shortcut-size);
+  grid-auto-flow: column;
+  gap: var(--comp-sys-space-lg);
+  border-radius: var(--comp-shortcut-rail-radius);
+  background: var(--comp-shortcut-rail-bg);
+  overflow-x: auto;
+  padding: var(--comp-sys-space-xs) var(--comp-app-padding-inline) var(--comp-sys-space-3xl);
+  scroll-padding-inline: var(--comp-app-padding-inline);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.shortcut-rail__track::-webkit-scrollbar {
+  display: none;
+}
+
+.shortcut-tile {
+  display: flex;
+  width: var(--comp-shortcut-size);
+  height: var(--comp-shortcut-size);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--comp-sys-space-xs);
+  padding: var(--comp-sys-space-sm);
+  border: none;
+  border-radius: var(--comp-card-radius-lg);
+  color: var(--comp-card-fg);
+  background: var(--comp-card-bg);
+  box-shadow: var(--comp-card-shadow);
+  scroll-snap-align: start;
+}
+
+.shortcut-tile__icon {
+  display: grid;
+  width: var(--comp-shortcut-icon-size);
+  height: var(--comp-shortcut-icon-size);
+  place-items: center;
+}
+
+.shortcut-tile__icon img {
+  display: block;
+  width: var(--comp-ref-size-full);
+  height: var(--comp-ref-size-full);
+  object-fit: contain;
+}
+
+.shortcut-tile__label {
+  font-size: var(--comp-sys-type-label-sm-size);
+  line-height: var(--comp-sys-type-label-sm-line);
+}

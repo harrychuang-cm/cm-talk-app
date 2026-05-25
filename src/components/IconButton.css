@@ -1,0 +1,32 @@
+.ui-icon-button {
+  display: grid;
+  width: var(--comp-icon-button-size);
+  height: var(--comp-icon-button-size);
+  place-items: center;
+  border: none;
+  border-radius: var(--comp-icon-button-radius);
+  color: var(--comp-icon-button-fg);
+  background: var(--comp-icon-button-bg);
+  transition:
+    transform var(--comp-motion-standard) var(--comp-motion-ease),
+    background var(--comp-motion-standard) var(--comp-motion-ease);
+}
+
+.ui-icon-button:hover:not(:disabled),
+.ui-icon-button--active {
+  transform: translateY(calc(var(--comp-state-hover-lift) * -1));
+}
+
+.ui-icon-button:focus-visible {
+  outline: var(--comp-state-focus-width) solid var(--comp-icon-button-focus-ring);
+  outline-offset: var(--comp-state-focus-offset);
+}
+
+.ui-icon-button .ui-icon {
+  color: currentColor;
+}
+
+.ui-icon-button:disabled {
+  color: var(--comp-button-disabled-fg);
+  background: var(--comp-button-disabled-bg);
+}

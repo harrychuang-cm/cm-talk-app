@@ -1,0 +1,34 @@
+---
+description: Use when implementing a new product screen or component from a UI screenshot, mockup, or Figma export. Triggers on phrases like "implement this screen", "build from screenshot", "turn this mockup into code", or when the user attaches an image and asks for an implementation.
+---
+
+# Screenshot → Storybook → Product (description-triggered)
+
+When the user provides one or more UI images and asks to implement them, follow `skills/ui-screenshot-to-storybook-product/SKILL.md` end-to-end.
+
+## Mandatory phases (no code until Phase 2 is approved)
+
+1. **Phase 1 — Visual parsing** (no code yet). Produce a structured UI inventory:
+   `| ID | Block | Type (atom/molecule/organism/template) | Visible states | Notes |`
+2. **Phase 2 — Map to design system & tokens.** Run the **Token Gate** and the **Component Reuse Gate** (score by intent / anatomy / props / states / coverage). Reuse at 8-10, extend at 6-7, create new only at 0-5 with explicit justification. **Stop and confirm with the user before Phase 3.**
+3. **Phase 3 — Storybook first.** Implement components with co-located `.stories.tsx` (Default, Variants, States) using only `var(--…)` tokens. Verify in `npx storybook dev` before importing into a screen. Use Storybook MCP (`list-all-documentation`, `get-documentation`, `get-storybook-story-instructions`) before deciding props.
+4. **Phase 4 — Assemble the product screen.** Page-level module composes documented components only. No inline JSX duplicating shared components.
+
+## Anti-demo rules (Reference Fidelity)
+
+- Do not add hero sections, decorative gradients, glassmorphism, glow effects, oversized empty cards, or illustration panels unless the reference clearly shows them.
+- Do not wrap every section in a card; preserve the reference's surface model.
+- Do not inflate whitespace, rounding, shadows, saturation, or icon density beyond the screenshot.
+- Do not use lorem ipsum or symmetrical placeholder data — use realistic domain content with the same visible length and density.
+
+## Foundations in Storybook (Design System Architect role)
+
+Before hand-writing many component stories, research the project's tokens and add **Foundations** documentation in Storybook: Color, Typography, Spacing/layout, Shape/radius, Elevation/shadow, and Iconography. Author every foundation guide as a full-screen `.tsx` documentation page plus a minimal CSF `.stories.tsx` route entry. Do not use `.jsx`, `.mdx`, or autodocs for foundations. Each guide must read like a design-system website page: explain design intent, token contract, role mapping, usage timing, accessibility expectations, implementation examples, and do/don't guidance. Use an editorial documentation layout, not a plain card grid: a full-width hero, sticky in-page section rail, dense token tables, visual specimens, implementation notes, and paired do/don't examples. Keep cards only for individual specimens or examples. Foundation `.stories.tsx` files are Storybook navigation shells only: import `Meta`/`StoryObj`, set `title: 'Foundations/<Name>'`, use `parameters: { layout: 'fullscreen' }`, render the guide page, and do not set `tags: ['autodocs']`. If a project enables autodocs globally, explicitly opt these stories out with `tags: ['!autodocs']`. Use these fixed documentation page templates:
+- **Color**: semantic color model, surface ladder, role swatches with resolved values, interaction/state colors, finance semantics, accessibility contrast notes, implementation snippets, do/don't.
+- **Typography**: type scale specimens, role-to-UI mapping, hierarchy rules for dense screens, truncation/overflow rules, implementation snippets, do/don't.
+- **Spacing**: spacing scale table, density modes, page/grid rhythm, component internal vs external spacing rules, composition specimens, do/don't.
+- **Shape**: radius ladder, control/card/container mapping, touch target geometry, nested-surface rules, component examples, do/don't.
+- **Elevation**: surface depth model, shadow/elevation scale, overlay/popover/dialog rules, stacking examples, motion/state notes, do/don't.
+- **Iconography**: icon source + shared wrapper contract, size/stroke matrix, semantic color mapping, decorative vs informative accessibility rules, examples, do/don't. Treat `Icon` as a baseline shared component with a reusable wrapper and document it in `Foundations/Iconography`. Update foundations whenever tokens change.
+
+Read the full skill for the complete phase-by-phase workflow, the Component Reuse Gate scoring rubric, and the quality checklist.

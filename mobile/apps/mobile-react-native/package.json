@@ -1,0 +1,23 @@
+{
+  "name": "design-spec-mobile-react-native",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo start --ios",
+    "android": "expo start --android",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@design-spec/shared": "file:../../packages/shared",
+    "@expo/metro-runtime": "latest",
+    "expo": "latest",
+    "expo-status-bar": "latest",
+    "react": "latest",
+    "react-native": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}

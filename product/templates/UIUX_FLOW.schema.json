@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UiUxFlow",
+  "description": "Screen-level UI/UX flow consumed by the Storybook Product Overview page (renders with @xyflow/react + @dagrejs/dagre).",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "productName",
+    "generatedAt",
+    "source",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "productName": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "ISO 8601 timestamp of last /prd or /change run that touched this file"
+    },
+    "source": {
+      "type": "string",
+      "description": "Inputs this flow was derived from, e.g. \"product/PRD.md + product/SCREEN_MANIFEST.json + product/FEATURE_MANIFEST.json\""
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Stable id; matches SCREEN_MANIFEST screen id when applicable"
+          },
+          "label": {
+            "type": "string",
+            "description": "Screen name displayed on the React Flow node"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "entry",
+              "screen",
+              "modal",
+              "sheet",
+              "decision",
+              "exit"
+            ]
+          },
+          "route": {
+            "type": "string",
+            "description": "Route path if applicable, e.g. \"/portfolio\""
+          },
+          "description": {
+            "type": "string",
+            "description": "1–2 sentence description of the screen purpose"
+          },
+          "feature": {
+            "type": "string",
+            "description": "Feature id from FEATURE_MANIFEST.json that owns this screen"
+          },
+          "position": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "description": "Optional override; set to null to let dagre auto-layout",
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source",
+          "target"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string",
+            "description": "Source node id"
+          },
+          "target": {
+            "type": "string",
+            "description": "Target node id"
+          },
+          "label": {
+            "type": "string",
+            "description": "Trigger or condition, e.g. \"Tap Buy\", \"Login success\", \"Tap Back\""
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "primary",
+              "secondary",
+              "back",
+              "deep-link",
+              "system"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
