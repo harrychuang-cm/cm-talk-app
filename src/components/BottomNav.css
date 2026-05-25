@@ -3,7 +3,7 @@
   right: auto;
   bottom: max(var(--comp-bottom-nav-inset), env(safe-area-inset-bottom));
   left: calc(var(--comp-ref-size-full) / 2);
-  z-index: var(--comp-ref-size-32);
+  z-index: var(--comp-bottom-nav-z-index);
   display: grid;
   width: calc(var(--comp-ref-size-full) - var(--comp-app-padding-inline) - var(--comp-app-padding-inline));
   max-width: calc(var(--comp-app-max-width) - var(--comp-app-padding-inline) - var(--comp-app-padding-inline));
@@ -52,6 +52,10 @@
 .ui-bottom-nav__icon {
   position: relative;
   display: grid;
+}
+
+.ui-bottom-nav__item .ui-icon {
+  color: currentColor;
 }
 
 .ui-bottom-nav__badge {

@@ -113,6 +113,7 @@
   --comp-bottom-nav-inset: var(--sys-space-lg);
   --comp-bottom-nav-shadow: var(--sys-elevation-raised);
   --comp-bottom-nav-backdrop-filter: var(--sys-effect-backdrop-blur);
+  --comp-bottom-nav-z-index: var(--sys-layer-navigation);
   --comp-bottom-nav-label-size: var(--sys-type-label-sm-size);
   --comp-bottom-nav-label-line: var(--sys-type-label-sm-line);
   --comp-bottom-nav-label-weight: var(--sys-weight-label);
@@ -145,6 +146,7 @@
   --comp-sentiment-summary-bg: var(--sys-color-secondary);
   --comp-sentiment-summary-fg: var(--sys-color-on-secondary);
   --comp-sentiment-divider: var(--sys-color-outline);
+  --comp-sentiment-divider-height: var(--sys-size-divider-short);
   --comp-sentiment-link-bg: var(--sys-color-transparent);
   --comp-sentiment-link-padding-block: var(--sys-space-5);
   --comp-sentiment-link-padding-inline-start: var(--sys-space-5);
@@ -189,6 +191,12 @@
   --comp-sheet-scrim: var(--sys-color-scrim);
   --comp-sheet-padding: var(--sys-space-2xl);
   --comp-sheet-handle-bg: var(--sys-color-outline);
+  --comp-sheet-z-index: var(--sys-layer-overlay);
+  --comp-sheet-control-z-index: var(--sys-layer-overlay-control);
+  --comp-sheet-close-inset-block: calc(var(--sys-space-4xl) + var(--sys-space-page-inline));
+  --comp-sheet-close-inset-inline: var(--sys-space-page-inline);
+
+  --comp-dialog-z-index: var(--sys-layer-overlay);
 
   --comp-motion-fast: var(--sys-motion-duration-fast);
   --comp-motion-standard: var(--sys-motion-duration-standard);

@@ -33,7 +33,7 @@ export function ArticleSheet({ open = false, eyebrow, source, title, summary, im
             <h2 id="article-sheet-title">{title}</h2>
             <span className="article-sheet__source">{source}</span>
           </div>
-          <IconButton icon={X} label="關閉文章" onClick={onClose} />
+          <IconButton className="article-sheet__close" icon={X} label="關閉文章" onClick={onClose} />
         </header>
         <img className="article-sheet__media" src={image} alt="" />
         <p className="article-sheet__summary">{summary}</p>

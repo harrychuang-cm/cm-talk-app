@@ -116,8 +116,13 @@
   --ref-size-194: 194px;
   --ref-size-320: 320px;
   --ref-size-full: 100%;
+  --ref-ratio-60: 60%;
   --ref-size-screen: 100dvh;
   --ref-size-mobile-max: 430px;
+
+  --ref-layer-32: 32;
+  --ref-layer-80: 80;
+  --ref-layer-88: 88;
 
   --ref-radius-0: 0;
   --ref-radius-8: 8px;

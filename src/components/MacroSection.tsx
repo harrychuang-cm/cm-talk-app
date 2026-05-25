@@ -42,11 +42,13 @@ export function MacroSection({ subtitle, title, updatedAt, items, insight }: Mac
         <img className="insight-card__icon" src={insight.icon} alt="" />
         <div className="insight-card__copy">
           <strong>{insight.title}</strong>
-          <p>{insight.body}</p>
+          <div className="insight-card__body-row">
+            <p>{insight.body}</p>
+            <button className="insight-card__action" type="button" aria-label="開啟直播筆記">
+              <Icon icon={ArrowRight} decorative />
+            </button>
+          </div>
         </div>
-        <button className="insight-card__action" type="button" aria-label="開啟直播筆記">
-          <Icon icon={ArrowRight} decorative />
-        </button>
       </Card>
     </section>
   )

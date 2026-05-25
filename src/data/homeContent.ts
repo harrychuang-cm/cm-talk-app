@@ -4,6 +4,10 @@ const avatar3 = new URL('../../design-reference/source-folder/files/testing-demo
 const hero1 = new URL('../../design-reference/source-folder/files/testing-demo-v2/talk-ui/imgs/img-bg-01.jpg', import.meta.url).href
 const hero2 = new URL('../../design-reference/source-folder/files/testing-demo-v2/talk-ui/imgs/img-bg-02.jpg', import.meta.url).href
 const hero3 = new URL('../../design-reference/source-folder/files/testing-demo-v2/talk-ui/imgs/img-bg-03.jpg', import.meta.url).href
+const feedImage1 = 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=320&h=320&q=80'
+const feedImage2 = 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=320&h=320&q=80'
+const feedImage3 = 'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?auto=format&fit=crop&w=320&h=320&q=80'
+const articleImage = 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=860&h=484&q=80'
 const icon02 = new URL('../../design-reference/source-folder/files/testing-demo-v2/talk-ui/imgs/icon-02.png', import.meta.url).href
 const icon03 = new URL('../../design-reference/source-folder/files/testing-demo-v2/talk-ui/imgs/icon-03.png', import.meta.url).href
 const icon04 = new URL('../../design-reference/source-folder/files/testing-demo-v2/talk-ui/imgs/icon-04.png', import.meta.url).href
@@ -89,7 +93,7 @@ export const homeContent = {
       title: '非農前資金為什麼先撤？三個圖表看懂避險訊號',
       summary: '本篇把就業數據、殖利率與市場參與度放在一起看，先整理可能影響週五盤勢的變數。',
       tags: ['總經', '美股', 'VIP'],
-      image: hero1,
+      image: feedImage1,
     },
     {
       author: '社群小編',
@@ -99,7 +103,7 @@ export const homeContent = {
       title: '今晚社團重點：CPI、美元轉強與半導體籌碼',
       summary: '小編整理社團討論中最常被問的 5 個問題，快速補上你錯過的訊息。',
       tags: ['社團', '摘要'],
-      image: hero2,
+      image: feedImage2,
     },
     {
       author: 'AI Bot',
@@ -109,7 +113,7 @@ export const homeContent = {
       title: 'H200 供應鏈一頁讀懂：禁令、需求與替代路線',
       summary: '由近期直播與文章整理成短摘要，先看結論，再進一步追原始內容。',
       tags: ['AI 摘要', '供應鏈'],
-      image: hero3,
+      image: feedImage3,
     },
   ],
   article: {
@@ -117,7 +121,7 @@ export const homeContent = {
     source: 'Talk君研究室 · 8 分鐘讀完',
     title: 'CPI 前的持倉檢查：先看三個資金訊號',
     summary: '這篇整理市場參與度、美元與殖利率三個訊號，幫你在數據公布前檢查美股持倉是否過度集中。',
-    image: hero1,
+    image: articleImage,
     points: [
       { label: '市場參與度', text: '若量能沒有跟上反彈，先把追價部位降到可控範圍。' },
       { label: '美元與殖利率', text: '美元轉強時，成長股估值壓力會先反映在高本益比標的。' },

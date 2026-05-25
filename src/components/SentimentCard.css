@@ -41,13 +41,20 @@
 }
 
 .sentiment-card__metric {
+  position: relative;
   display: grid;
   gap: var(--comp-sys-space-xs);
   text-align: center;
 }
 
-.sentiment-card__metric + .sentiment-card__metric {
-  border-inline-start: var(--comp-card-border-width) solid var(--comp-sentiment-divider);
+.sentiment-card__metric + .sentiment-card__metric::before {
+  position: absolute;
+  inset-block-start: calc((var(--comp-ref-size-full) - var(--comp-sentiment-divider-height)) / 2);
+  inset-block-end: calc((var(--comp-ref-size-full) - var(--comp-sentiment-divider-height)) / 2);
+  inset-inline-start: var(--comp-sys-space-zero);
+  width: var(--comp-card-border-width);
+  background: var(--comp-sentiment-divider);
+  content: "";
 }
 
 .sentiment-card__metric-label {

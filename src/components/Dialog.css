@@ -1,7 +1,7 @@
 .ui-dialog-backdrop {
   position: fixed;
   inset: var(--comp-sys-space-zero);
-  z-index: var(--comp-ref-size-40);
+  z-index: var(--comp-dialog-z-index);
   display: grid;
   align-items: end;
   background: color-mix(in srgb, var(--comp-sheet-scrim) 52%, transparent);

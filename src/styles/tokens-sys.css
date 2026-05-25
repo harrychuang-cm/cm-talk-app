@@ -107,6 +107,7 @@
   --sys-size-trade-card-width: var(--ref-size-320);
   --sys-size-hero-card: var(--ref-size-320);
   --sys-size-app-max: var(--ref-size-mobile-max);
+  --sys-size-divider-short: var(--ref-ratio-60);
 
   --sys-radius-none: var(--ref-radius-0);
   --sys-radius-sm: var(--ref-radius-12);
@@ -121,6 +122,9 @@
   --sys-elevation-card: var(--ref-shadow-2);
   --sys-elevation-overlay: var(--ref-shadow-3);
   --sys-effect-backdrop-blur: var(--ref-filter-blur-20);
+  --sys-layer-navigation: var(--ref-layer-32);
+  --sys-layer-overlay: var(--ref-layer-80);
+  --sys-layer-overlay-control: var(--ref-layer-88);
   --sys-opacity-hero-overlay: var(--ref-opacity-82);
   --sys-opacity-hero-light-overlay: var(--ref-opacity-86);
   --sys-motion-duration-none: var(--ref-duration-0);

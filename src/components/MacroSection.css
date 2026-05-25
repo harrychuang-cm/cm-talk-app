@@ -48,7 +48,7 @@
 }
 
 .insight-card {
-  grid-template-columns: auto minmax(var(--comp-sys-space-zero), 1fr) auto;
+  grid-template-columns: auto minmax(var(--comp-sys-space-zero), 1fr);
   align-items: center;
 }
 
@@ -74,6 +74,13 @@
   color: var(--comp-card-muted-fg);
   font-size: var(--comp-sys-type-body-sm-size);
   line-height: var(--comp-sys-type-body-sm-line);
+}
+
+.insight-card__body-row {
+  display: grid;
+  grid-template-columns: minmax(var(--comp-sys-space-zero), 1fr) auto;
+  align-items: center;
+  gap: var(--comp-sys-space-md);
 }
 
 .insight-card__action {

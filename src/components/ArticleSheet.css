@@ -2,7 +2,7 @@
   position: fixed;
   inset-block: var(--comp-sys-space-zero);
   left: calc(var(--comp-ref-size-full) / 2);
-  z-index: var(--comp-ref-size-40);
+  z-index: var(--comp-sheet-z-index);
   display: flex;
   width: var(--comp-ref-size-full);
   max-width: var(--comp-app-max-width);
@@ -36,6 +36,14 @@
   display: flex;
   justify-content: space-between;
   gap: var(--comp-sys-space-md);
+}
+
+.article-sheet__close {
+  position: fixed;
+  inset-block-start: var(--comp-sheet-close-inset-block);
+  inset-inline-start: auto;
+  inset-inline-end: var(--comp-sheet-close-inset-inline);
+  z-index: var(--comp-sheet-control-z-index);
 }
 
 .article-sheet__eyebrow,
