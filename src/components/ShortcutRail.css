@@ -10,7 +10,7 @@
   border-radius: var(--comp-shortcut-rail-radius);
   background: var(--comp-shortcut-rail-bg);
   overflow-x: auto;
-  padding: var(--comp-sys-space-xs) var(--comp-app-padding-inline) var(--comp-sys-space-3xl);
+  padding: var(--comp-sys-space-xs) var(--comp-app-padding-inline) var(--comp-sys-space-2xl);
   scroll-padding-inline: var(--comp-app-padding-inline);
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
